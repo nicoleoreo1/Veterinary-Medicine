@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veterinary Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Veterinary Notes</h1>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab-btn active" data-target="fever">Causes of Fever</button>
+  </nav>
+
+  <main>
+    <section id="fever" class="tab-content active">
+      <h2>Causes of Fever</h2>
+      <div class="category">
+        <h3>Infectious</h3>
+        <ul>
+          <li>Bacterial infection (e.g., pyometra, abscess, pneumonia)</li>
+          <li>Viral infection (e.g., distemper, parvovirus, FIP)</li>
+          <li>Fungal infection (e.g., histoplasmosis, blastomycosis)</li>
+          <li>Rickettsial disease (e.g., Rocky Mountain spotted fever, ehrlichiosis)</li>
+          <li>Protozoal infection (e.g., toxoplasmosis, babesiosis)</li>
+          <li>Leptospirosis</li>
+          <li>Tick-borne diseases</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Immune-Mediated</h3>
+        <ul>
+          <li>Immune-mediated hemolytic anemia (IMHA)</li>
+          <li>Immune-mediated thrombocytopenia (ITP)</li>
+          <li>Systemic lupus erythematosus (SLE)</li>
+          <li>Rheumatoid arthritis</li>
+          <li>Polyarthritis</li>
+          <li>Vasculitis</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Neoplasia</h3>
+        <ul>
+          <li>Lymphoma</li>
+          <li>Leukemia</li>
+          <li>Solid tumors with necrosis</li>
+          <li>Paraneoplastic syndrome</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Inflammatory / Other</h3>
+        <ul>
+          <li>Pancreatitis</li>
+          <li>Polyarthritis (non-infectious)</li>
+          <li>Hepatitis</li>
+          <li>Drug reaction / drug fever</li>
+          <li>Vaccine reaction</li>
+          <li>Heat stroke</li>
+          <li>Hyperthyroidism (cats)</li>
+          <li>Fever of unknown origin (FUO)</li>
+        </ul>
+      </div>
+      <div class="category">
+        <h3>Tissue Damage</h3>
+        <ul>
+          <li>Trauma</li>
+          <li>Surgery / post-operative fever</li>
+          <li>Thromboembolism</li>
+          <li>Infarction</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
