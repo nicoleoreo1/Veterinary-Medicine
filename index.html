@@ -13,64 +13,950 @@
 
   <nav class="tab-bar">
     <button class="tab-btn active" data-target="fever">Causes of Fever</button>
+    <button class="tab-btn" data-target="transfusion-section">Transfusion Medicine</button>
   </nav>
 
   <main>
     <section id="fever" class="tab-content active">
       <h2>Causes of Fever</h2>
-      <div class="category">
-        <h3>Infectious</h3>
-        <ul>
-          <li>Bacterial infection (e.g., pyometra, abscess, pneumonia)</li>
-          <li>Viral infection (e.g., distemper, parvovirus, FIP)</li>
-          <li>Fungal infection (e.g., histoplasmosis, blastomycosis)</li>
-          <li>Rickettsial disease (e.g., Rocky Mountain spotted fever, ehrlichiosis)</li>
-          <li>Protozoal infection (e.g., toxoplasmosis, babesiosis)</li>
-          <li>Leptospirosis</li>
-          <li>Tick-borne diseases</li>
-        </ul>
+
+      <nav class="disease-bar">
+        <button class="disease-btn active" data-disease="cdv">Canine Distemper Virus</button>
+        <button class="disease-btn" data-disease="fecov">FeCoV / FIP</button>
+        <button class="disease-btn" data-disease="felv">FeLV</button>
+        <button class="disease-btn" data-disease="fiv">FIV</button>
+        <button class="disease-btn" data-disease="lepto">Leptospirosis</button>
+        <button class="disease-btn" data-disease="rabies">Rabies</button>
+        <button class="disease-btn" data-disease="myco">Mycobacterium</button>
+        <button class="disease-btn" data-disease="bartonella">Bartonella</button>
+        <button class="disease-btn" data-disease="mycoplasma">Mycoplasma haemofelis</button>
+        <button class="disease-btn" data-disease="rickettsial">Rickettsial Diseases</button>
+        <button class="disease-btn" data-disease="lyme">Lyme Disease</button>
+        <button class="disease-btn" data-disease="plague">Plague</button>
+        <button class="disease-btn" data-disease="tularemia">Tularemia</button>
+        <button class="disease-btn" data-disease="mycoses">Systemic Mycoses</button>
+        <button class="disease-btn" data-disease="protozoa">Systemic Protozoal Diseases</button>
+        <button class="disease-btn" data-disease="imha">IMHA</button>
+        <button class="disease-btn" data-disease="itp">ITP</button>
+        <button class="disease-btn" data-disease="impa">IMPA</button>
+        <button class="disease-btn" data-disease="sle">SLE</button>
+      </nav>
+
+      <div id="cdv" class="disease-content active">
+        <div class="notes-body">
+        <h2>Canine Distemper Virus (CDV)</h2>
+        <div class="field"><span class="label">Family:</span> Paramyxoviridae &nbsp;&nbsp;&nbsp; <span class="label">Genus:</span> Morbillivirus</div>
+        <div class="field"><span class="label">Transmission:</span> predominantly aerosol (abundant in respiratory secretions), direct contact
+          <div class="indent">Virus shedding: begins 7 days post-infection, lasts 1-2 weeks but can shed up to 60-90 days post-infection</div>
+        </div>
+        <div class="field"><span class="label">Prevalence:</span> greatest at age 3-6 months, increased risk in unvaccinated/naïve dogs (after loss of maternal antibody)</div>
+        <div class="field"><span class="label">Clinical signs:</span> generalized → occulonasal or mucopurulent discharge, coughing, lethargy decreased appetite, fever, URI, multi-systemic signs (pneumonia, vomiting, diarrhea, tenesmus, intussusception), chewing gum seizures, cerebellar/vestibular seizures, para-/tetraparesis, ataxia, hyperesthesia, cervical/paraspinal rigidity, myoclonus, nasal and digital hyperkeratosis, pustular dermatitis (uncommon), mild anterior uveitis, optic neuritis, retinal degeneration or detachment, chorioretinitis, keratoconjunctivitis sicca, severe enamel hypoplasia, transplacental infections (abortions, stillbirths, weak puppies, permanent immunodeficiencies, CNS signs in puppies), hypertrophic osteodystrophy, juvenile cellulitis</div>
+        <div class="field"><span class="label">Pathogenesis:</span> (Day 1) virus multiplies in tissue macrophages and spreads to tonsils and bronchial LNs → (Days 2-4) virus replicates in lymphocytes in tonsil and retropharyngeal and bronchial LNs → (Days 4-6) widespread infection of systemic lymphoid organs, lymphopenia, fever → (Days 8-9) hematogenous spread to epithelial cells and CNS, virus shed in all body secretions
+          <div class="sub-section"><span class="sub-header">Viremia depends on immune status:</span></div>
+          <div class="indent"><em>Good cell-mediated immunity and anti-CDV antibodies</em> = clears virus from most tissues</div>
+          <div class="indent"><em>Delayed immune response</em> = virus gradually cleared from tissues but may persist in some tissues (neurons, integument such as foot pads, uveal tract) which leads to delayed clinical signs → CNS signs, hard pad disease, uveitis, optic neuritis, keratoconjunctivitis sicca (dry eye), chorioretinitis (gold medallion lesions)</div>
+          <div class="indent"><em>No satisfactory immune response</em> = widespread tissue infection with dramatic clinical signs (GI tract, genitourinary tract, respiratory tract, skin, CNS) → virus persists until death</div>
+          <div class="sub-section"><span class="sub-header">Central nervous system infection:</span> occurs in up to 30% of dogs and is associated with hematogenous spread</div>
+          <div class="indent"><em>Acute CDV encephalitis:</em> occurs in immature or immunocompromised dogs → causes direct viral replication and injury = acute, non-inflammatory demyelination → clinical signs include chewing gum seizures, cerebellar/vestibular seizures, para-/tetraparesis, ataxia, hyperesthesia, cervical/paraspinal rigidity</div>
+          <div class="indent"><em>Subacute and chronic CDV encephalitis:</em> occurs in mature dogs that may have CNS disease without systemic illness → immune reaction (NOT viral replication) leads to inflammatory demyelination = may start with focal signs and progress → clinical signs are similar to acute but include myoclonus</div>
+          <div class="indent"><em>Old dog encephalitis (ODE):</em> very rare and occurs weeks to years after infection in immunocompetent dogs with persistent virus that is replication defective → chronic active and progressive inflammation of cerebrum and brainstem gray matter</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> clinical suspicion (full spectrum of signs/more than one organ system, myoclonus), laboratory support (lymphopenia, inclusion bodies), RT-PCR for viral RNA is test of choice, antigen testing (immunofluorescent or immunohistochemistry staining), antibody testing (ELISA IgM for acute clinical cases and ELISA IgG for past or present infection or vaccination), CSF for CNS disease (normal CSF cytology, protein and counts for acute CDV encephalitis and increased protein and cell count due to leakage from blood-CSF barrier and local IgG production for chronic CDV encephalitis)</div>
+        <div class="field"><span class="label">Therapy:</span> NO CURE → supportive, symptomatic, palliative, treat secondary infections</div>
+        <div class="field"><span class="label">Prevention:</span> modified live virus CDV vaccine immunity is generally long term → vaccinate q3-4wk between ages 6-16 weeks with a 1 year booster and booster every 3 years after</div>
+        </div>
       </div>
-      <div class="category">
-        <h3>Immune-Mediated</h3>
-        <ul>
-          <li>Immune-mediated hemolytic anemia (IMHA)</li>
-          <li>Immune-mediated thrombocytopenia (ITP)</li>
-          <li>Systemic lupus erythematosus (SLE)</li>
-          <li>Rheumatoid arthritis</li>
-          <li>Polyarthritis</li>
-          <li>Vasculitis</li>
-        </ul>
+
+      <div id="fecov" class="disease-content">
+        <div class="notes-body">
+        <h2>Feline Coronavirus (FeCoV) and Feline Infectious Peritonitis (FIP)</h2>
+        <div class="field"><span class="label">FeCoV Type I</span> are the predominant strains worldwide</div>
+        <div class="field"><span class="label">FeCoV Type II</span> are strains formed from recombination between feline and canine coronaviruses</div>
+        <div class="field"><span class="label">Transmission:</span> oronasal exposure via feces and fomites</div>
+        <div class="field"><span class="label">Prevalence:</span> felines ages 3 months to 3 years is most common → any cat carrying any coronavirus is potentially at risk for developing FIP but is a sporadic disease</div>
+        <div class="field"><span class="label">FeCoV causes GI disease and Feline Infectious Peritonitis (FIP) in cats:</span></div>
+        <div class="indent"><em>How FeCoV causes FIP:</em> mutation of FeCoV within infected cat allows infection and replication within macrophages → cats are NOT infected with FIP virus → purebred cats are more susceptible, and stress may play a role</div>
+        <div class="indent"><em>Pathogenesis of FIP:</em> Type II &amp; III hypersensitivity (complement-mediated, antibody-antigen) – macrophage tropism of FeCoV to transform to FIP → infected macrophages attach to vessels and the virus invades tissues → systemic pyogranulomatous vasculitis</div>
+        <div class="indent2">Produce antibodies but an inadequate cell-mediated immunity → develop effusive "wet form" of FIP = exudation of plasma proteins – yellow color from RBC breakdown products (bilirubin and biliverdin), RBC damage from vasculitis, clotting and complement factor activation, DIC</div>
+        <div class="indent2">Produce antibodies and partially protective cell-mediated immunity → develop non-effusive "dry form" of FIP = granuloma/pyogranuloma formation</div>
+        <div class="indent2">Produce antibodies and aggressive cell-mediated immunity → less likely to develop FIP but may harbor latent virus for years that may reactivate if immunosuppressed or co-infected with FeLV</div>
+        <div class="field"><span class="label">Clinical signs of FIP:</span> vague (lethargy, anorexia, weight loss, chronic fever) and varied (bloated abdomen, blindness, neurologic signs, diarrhea, vomiting)</div>
+        <div class="indent"><em>Clinical signs of "wet form" FIP:</em> high protein fluid accumulation in body cavities (modified transudate to exudate – high protein, low cell count) caused by immune complex damage to vessels, abdominal fluid, pleural fluid present in 25%</div>
+        <div class="indent"><em>Clinical signs of "dry form" FIP:</em> pyogranulomatous lesions (neutrophils and macrophages) commonly in eyes, CNS and lymph nodes, clinical signs due to organ dysfunction (blindness, seizures, ataxia, liver failure, kidney failure)</div>
+        <div class="indent"><em>Clinical signs of ocular FIP:</em> usually with non-effusive form – anterior uveitis, chorioretinitis, keratic precipitates, hyphema, hypopyon, retinal detachment and hemorrhage</div>
+        <div class="field"><span class="label">Diagnosis: laboratory findings</span></div>
+        <div class="indent"><em>Complete blood count (CBC)</em> – nonspecific and variable → anemia, lymphopenia</div>
+        <div class="indent"><em>Serum chemistry</em> – hyperglobulinemia (effusive and non-effusive forms), hypoalbuminemia with albumin:globulin &lt; 0.4 highly predictive of FIP (rule out, not rule in – esp. &gt; 0.8), hyperbilirubinemia</div>
+        <div class="indent"><em>Protein electrophoresis</em> – polyclonal gammopathy (high gamma globulin level)</div>
+        <div class="indent"><em>Abdominal +/- pleural effusion</em> – tends to be high protein (tenacious, straw-colored, clear or slightly cloudy, +/- fibrin clots), non-septic exudate (protein &gt;3.5 g/dl) or moderate cellularity modified transudate (&lt;5000 cells/uL)</div>
+        <div class="indent"><em>Immunohistochemistry (IHC)</em> – absolute gold standard for detecting virus in tissues for FIP diagnosis – antigen is within tissue macrophages (often post-mortem diagnosis) → only cats with FIP have positive tests</div>
+        <div class="indent"><em>Immunofluorescence (or immunocytochemistry)</em> – detection of FeCoV in macrophages in effusion → high positive predictive value but poor negative predictive value</div>
+        <div class="indent"><em>Immunofluorescent antibody (IFA) ELISA</em> – gold standard for FeCoV antibody detection → does not test for FIP antibody – a positive antibody test does not confirm FIP and a negative test does not rule out FIP</div>
+        <div class="indent"><em>RT-PCR</em> – highly sensitive and specific for FIP infection in abdominal or thoracic effusion but low sensitivity for peripheral blood mononuclear cells and serum</div>
+        <div class="indent"><em>RT-nestedPCR</em> – PCR for FeCoV and 2 mutations in the spike gene in which 1 of the 2 mutations are present in &gt;98% of FIP viruses detected in diseased tissue</div>
+        <div class="indent"><em>Cerebral spinal fluid (CSF)</em> – pleocytosis (lots of cells) often marked (20-10,000 cells/uL – neutrophilic), high protein (30 to &gt;1000 mg/dL), coronavirus antibody titer may correlate with FIP but CSF can be normal in FIP cats with neuro signs</div>
+        <div class="field"><span class="label">Diagnosis: pathologic findings</span></div>
+        <div class="indent"><em>Gross pathologic findings</em> – effusions (peritoneal, pericardial, pleural), mesenteric adhesions, granulomas (large or miliary), enlarged lymph nodes, fibrinous exudate +/- ventricular dilation in brain</div>
+        <div class="indent"><em>Histopathologic findings</em> – systemic perivascular granulomatous or pyogranulomatous lesions, multifocal, coalescing</div>
+        <div class="field"><span class="label">Therapy:</span> INCURABLE? (new medications hold promise – nucleoside analog GS-441524 which is a metabolite of the antiviral drug remdesivir → results in premature termination of viral RNA synthesis) → supportive therapy with fluids and probiotics, prednisone (suppression of immune-complex component but not curative – 2-4 mg/kg SID)</div>
+        <div class="field"><span class="label">Prognosis:</span> 84-90% survival rates with injectable GS-441524, 77-83% survival rate with oral antivirals → medial survival of 9-38 days without medications → negative prognostic indicators include hyperbilirubinemia, lymphopenia, large volumes of effusion</div>
+        <div class="field"><span class="label">Prevention:</span> queen in isolated and disinfected rooms, test queen before kittens are born (if positive then remove kittens from mom at 4-6 weeks before waning maternal antibodies occurs), test kittens after 10 weeks for seroconversion</div>
+        </div>
       </div>
-      <div class="category">
-        <h3>Neoplasia</h3>
-        <ul>
-          <li>Lymphoma</li>
-          <li>Leukemia</li>
-          <li>Solid tumors with necrosis</li>
-          <li>Paraneoplastic syndrome</li>
-        </ul>
+
+      <div id="felv" class="disease-content">
+        <div class="notes-body">
+        <h2>Feline Leukemia Virus (FeLV)</h2>
+        <div class="field">Retrovirus inserted into the genome</div>
+        <div class="field"><span class="label">Transmission:</span> vertically from infected queens to kittens and horizontally among cats that live together or fight → virus shed in saliva, nasal secretions, feces, milk, and urine → transmission primarily through grooming</div>
+        <div class="field"><span class="label">Prevalence:</span> at-risk cats include cats that are unvaccinated and have outdoor access, males, sick, have bite wounds, oral disease, known exposure (30 days), live in multi-cat environments, enter shelters or rescues, are newly acquired cats or kittens, and prior to receiving FeLV vaccination → seroprevalence of FeLV is 2.5%</div>
+        <div class="field"><span class="label">Clinical signs:</span> fever, lymphadenopathy, leukopenia</div>
+        <div class="field"><span class="label">Pathogenesis:</span> virus replicates in draining lymph nodes → virus spreads through lymphoid tissues and bone marrow → virus infects epithelial cells to be shed in secretions
+          <div class="indent"><em>Outcomes of FeLV infection</em> – determined by age, immune system, infectious pressure, virus virulence</div>
+          <div class="indent"><em>Abortive infection</em> – infection is cleared prior to viremia (rare) → never p27 antigen positive</div>
+          <div class="indent"><em>Regressive infection</em> – transient viremia, then proviral DNA inserts into host genome and may never cause disease again (does not shed virus) but reactivation is possible → p27 antigen positive in initial viremic period but negative by 16 weeks</div>
+          <div class="indent"><em>Progressive infection</em> – persistent viremia that develops into FeLV-associated diseases such as neoplasia (lymphoma, leukemia, fibrosarcoma), opportunistic infections (Mycoplasma hemofelis), pure red cell aplasia (FeLV C), aplastic anemia, myelodysplasia, or myelofibrosis, immune-mediated disease (IMHA, ITP, GN, IMPA, uveitis), peripheral lymphadenopathy, neurologic disease, reproductive failure, GI disease (uncommon) → p27 antigen ELISA remains positive, IFA positive</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> all at-risk cats should be tested and potential blood donors
+          <div class="indent"><em>Screening test</em> – soluble core antigen p27 detected via ELISA → negative p27 ELISA could indicate no infection or regressive infection</div>
+          <div class="indent"><em>Confirmatory test</em> – immunofluorescent antibody assay (IFA), second ELISA or proviral DNA PCR (high titers may indicate progressive disease, low titers are consistent with regressive infection)</div>
+        </div>
+        <div class="field"><span class="label">Management:</span> keep infected cat indoors, vaccinate with core vaccines, at least twice yearly veterinary visits and lab work, test and vaccinate housemates</div>
+        <div class="field"><span class="label">Therapy:</span> treat secondary infections, treat lymphoma with chemotherapy, treat anemia with erythropoietin analogs – antivirals and immune stimulants have shown no proven effect</div>
+        <div class="field"><span class="label">Prevention:</span> test new cats prior to entry into household or shelter, vaccinate kittens and at 1 year with further vaccination dependent on risks, isolate infected cats from unexposed cats, keep cats indoors</div>
+        </div>
       </div>
-      <div class="category">
-        <h3>Inflammatory / Other</h3>
-        <ul>
-          <li>Pancreatitis</li>
-          <li>Polyarthritis (non-infectious)</li>
-          <li>Hepatitis</li>
-          <li>Drug reaction / drug fever</li>
-          <li>Vaccine reaction</li>
-          <li>Heat stroke</li>
-          <li>Hyperthyroidism (cats)</li>
-          <li>Fever of unknown origin (FUO)</li>
-        </ul>
+
+      <div id="fiv" class="disease-content">
+        <div class="notes-body">
+        <h2>Feline Immunodeficiency Virus (FIV)</h2>
+        <div class="field">Retrovirus inserted into the genome</div>
+        <div class="field"><span class="label">Transmission:</span> via bite wounds (high concentration in saliva) – horizontally among cats that live together is uncommon</div>
+        <div class="field"><span class="label">Prevalence:</span> increased risk cats include free-roaming adults and males and at-risk cats include sick cats, cats with bite wounds, oral disease, known exposure (30 days), in multi-cat environments, cats entering shelters or rescue, newly acquired cats and kittens and prior to FIV vaccination → 18.2% of sick feral cats are FIV+</div>
+        <div class="field"><span class="label">Clinical signs:</span> fever, malaise, diarrhea</div>
+        <div class="field"><span class="label">Pathogenesis:</span> many cats remain asymptomatic and have a normal to moderately decreased lifespan and few cats have progressive infection
+          <div class="indent"><em>Progressive FIV</em> – progression is related to virus strain and host immunity with most cats dying within 1 year once ill → outcomes include opportunistic infections, chronic gingivostomatitis, chronic rhinitis, immune-mediated disease (GN), peripheral lymphadenopathy, weight loss, lymphoma, squamous cell carcinoma, neuropathy, seizures, behavior change (neurovirulent strains)</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Screening test</em> – antibody tests via ELISA (high sensitivity) – serology does not differentiate vaccinal antibodies → kittens less than 6 months with positive results may be maternal antibody and not true infection</div>
+          <div class="indent2">Positive ELISA → retest kitten after 6 months and do viral PCR in vaccinated cats</div>
+          <div class="indent2">Negative ELISA but suspected → viral PCR</div>
+        </div>
+        <div class="field"><span class="label">Management:</span> keep indoors, neuter or spay, vaccinate with core vaccines, at least twice-yearly veterinary visits and lab work, test housemates</div>
+        <div class="field"><span class="label">Therapy:</span> treat secondary infections, treat lymphoma with chemotherapy, erythropoietin in cats with severe non-regenerative anemia, antivirals may be helpful (AZT can cause bone marrow suppression), human alpha interferon</div>
+        </div>
       </div>
-      <div class="category">
-        <h3>Tissue Damage</h3>
-        <ul>
-          <li>Trauma</li>
-          <li>Surgery / post-operative fever</li>
-          <li>Thromboembolism</li>
-          <li>Infarction</li>
-        </ul>
+
+      <div id="lepto" class="disease-content">
+        <div class="notes-body">
+        <h2>Leptospirosis</h2>
+        <div class="field"><em>Leptospira interogans:</em> thin, motile, spirochetes found in contaminated water and carried by rodents and other wildlife species (ie. raccoons)</div>
+        <div class="field"><span class="label">Serovars known to affect dogs:</span> Canicola, Icterohemorrhagiae, Grippotyphosa, Pomona, Bratislava, Harjo, Ballum, Autumnalis, Australis → pathogenic and non-pathogenic serovars are maintained in nature by numerous sub clinically affected host species</div>
+        <div class="field"><span class="label">Leptospirosis in cats:</span> less susceptible than dogs but exposure causes seroconversion to positive antibody titers → usually mild or unapparent clinically and there may be histologic lesions in kidneys and liver</div>
+        <div class="field">Organism survives in moisture and moderately warm temperatures → organisms can be viable for months in soil saturated by urine → most prevalent in late summer and early fall in upper Midwest during high rainfall season</div>
+        <div class="field"><span class="label">Transmission:</span> direct (urine, venereal, placental, bite wounds, ingestion of infected material or tissues) and indirect (contaminated water, food, soil and bedding from wildlife, infected pets, and farm animals)
+          <div class="indent">Incubation period of 1-7 days with replication in blood starting 1 day post infection</div>
+        </div>
+        <div class="field"><span class="label">Prevalence:</span> large and small breeds less than 15 pounds (Yorkies), dogs that have direct exposure to wildlife and engage in outdoor activities such as hunting and swimming</div>
+        <div class="field"><span class="label">Clinical signs:</span> fever (103-104 F), malaise, vomiting, dehydration, icterus, peripheral vascular collapse, hematemesis, hematochezia, epistaxis, petechial hemorrhages (vasculitis), other effects (benign meningitis, uveitis, abortion, infertility)
+          <div class="indent"><em>Clinical presentation:</em> acute kidney injury (failure), hepatic disease (typically with icterus), combo of kidney and liver (high index suspicion for lepto), polyuria/polydipsia</div>
+          <div class="indent"><strong>Leptospirosis pulmonary hemorrhage (LPH) or lepto lung</strong> – vasculitis causing fluid exudation from lungs, pulmonary hemorrhage due to effect of toxins on the lungs → regional to California (up to 70% of cases)</div>
+        </div>
+        <div class="field"><span class="label">Pathogenesis:</span> leptospires penetrate intact mucous membranes or abraded, scratched or water-softened skin → replication in blood causing vasculitis → spread to organs
+          <div class="indent"><em>Pathogenicity varies among serovars</em></div>
+          <div class="indent2"><strong>Renal but more hepatic involvement</strong> – Icterohemorrhagiae, Pomona</div>
+          <div class="indent2"><strong>Predominantly renal</strong> – Canicola and Grippotyphosa</div>
+          <div class="indent"><em>Renal colonization</em> – organism replicated and persists in renal tubular epithelial cells → 2 weeks postinfection the organism is present in tubular cells and tubular lumen → onset of shedding in urine and intermittent shedding occurs even with clinical recovery</div>
+          <div class="indent"><em>Hepatic injury</em> – lepto LPS interferes with biliary processing and hepatic injury may occur without structural hepatic lesions through subcellular damage caused by leptospira → amount of icterus correlated with hepatic necrosis</div>
+          <div class="indent"><strong>Chronic active hepatitis occurs with the Grippotyphosa serovar</strong> – extensive fibrosis and dysfunction may occur = canines with hepatic dysfunction or fibrosis should be tested for leptospirosis</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis: laboratory findings</span></div>
+        <div class="indent"><em>Complete blood count (CBC)</em> – leukocytosis, thrombocytopenia</div>
+        <div class="indent"><em>Serum chemistry</em> – typical renal findings of acute kidney injury (azotemia, impaired urine concentration) and typical hepatic findings (acute – subacute hepatitis with increased liver enzyme activities of ALP &gt;ALT and hyperbilirubinemia)</div>
+        <div class="indent">Detect antibodies directed at bacteria –</div>
+        <div class="indent2"><strong>Microscopic agglutination test (MAT)</strong> – quantitative antibody acute (day 1) and convalescent (7-14 days) titers of common serovars (6-8) → titer may be false negative or ≤ 1:800 during first 7 to 10 days and needs a second test → titer ≥ 1:1600 is hx of vaccination or likely leptospirosis and titer ≥ 1:6400 is leptospirosis dx → ≥ 4-fold increase in paired (acute and convalescent) titers confirms dx</div>
+        <div class="indent2"><strong>SNAP Lepto (Idexx) and WITNESS Lepto Rapid Test (Zoetis)</strong> – performed in clinic on blood and or urine before antimicrobial administration *rapid test that does not require live leptospirosis cultures</div>
+        <div class="indent">Detect bacteria directly –</div>
+        <div class="indent2"><strong>Bacterial DNA by PCR in blood or urine</strong> – bacteremic phase first 7-10 days after infection and bacteriuric phase after 1st week → test both blood and urine before beginning antimicrobial therapy (recent vx does not interfere with PCR) → positive result and clinical signs suggests lepto but a negative result does not rule-out lepto</div>
+        <div class="indent2"><strong>Culture</strong></div>
+        <div class="indent2"><strong>Darkfield microscopy</strong></div>
+        <div class="field"><span class="label">Diagnosis: imaging</span></div>
+        <div class="indent"><em>Abdominal ultrasound</em> – renomegaly, pyelectasia, increased cortical echogenicity</div>
+        <div class="indent"><em>Thoracic radiographs</em> – interstitial to nodular alveolar densities → lepto lungs</div>
+        <div class="field"><span class="label">Therapy:</span> parenteral penicillins for acute treatment eliminates leptospiremia (stops active infection and active organ injury and probably stops urinary shedding) but does not resolve carrier state → switch to 2 weeks doxycycline (eliminates carrier state) or continue penicillins (ampicillin or amoxicillin or penicillin G) if patient cannot tolerate doxycycline due to GI signs → supportive care with fluid therapy, antiemetics, GI protectants, phosphate binders, hepatic support medications, nutritional support</div>
+        <div class="field"><span class="label">Prognosis:</span> most survive (~80%) with therapy beginning early enough, kidney failure or severe respiratory complications results in poorer prognosis, monitoring is vital as may lead to chronic renal and hepatic diseases</div>
+        <div class="field"><span class="label">Prevention:</span> vaccination – bacterins against Canicola, Icterohemorrhagiae, Pomona and Grippotyphos → 2 injections given 2-4 weeks apart gives 12+ months of shedding and prevents renal shedding</div>
+        </div>
+      </div>
+
+      <div id="rabies" class="disease-content">
+        <div class="notes-body">
+        <h2>Rabies Virus</h2>
+        <div class="field"><span class="label">Family:</span> Rhabdoviridae &nbsp;&nbsp;&nbsp; <span class="label">Genera:</span> Lyssavirus</div>
+        <div class="field"><span class="label">Structure:</span> non-segmented negative-sense ssRNA virus – bullet shaped, enveloped, large glycoprotein spikes, G protein is target of neutralizing antibodies, easily destroyed by heat/sunlight/drying/antiseptics and can remain viable in carcass for a few days at 20 Celsius</div>
+        <div class="field"><span class="label">Transmission:</span> saliva of an infected animal is most common source and viral shedding in saliva can occur before clinical signs become apparent, mammals are vectors and reservoirs in nature
+          <div class="indent">Incubation period varies – 1-6 months in dogs and cats, 1-12 months in humans and longer than 2 years in rare cases</div>
+        </div>
+        <div class="field"><span class="label">Prevalence:</span> infects all warm-blooded animals and in nearly all animals the infection is fatal → cats are identified more often than dogs in the USA
+          <div class="indent">Species vary in level of susceptibility – high (bats, skunks, raccoons, cattle), moderate (dogs, cats, sheep, goats, horses, monkeys), and low (birds, primitive mammals such as opossum)</div>
+          <div class="indent">Rabies is endemic in skunks in the upper Midwest.</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> change in mental status, excessive drooling of saliva, nerve-muscular paralysis</div>
+        <div class="field"><span class="label">Pathogenesis:</span> virus replicates in the muscle (limited) → virus buds into the synaptic cleft of the neuro muscular junction via viral attachment with the G glycoproteins → virus is taken up by the neurons and begins retrograde axonal transport to CNS and reaches the limbic system and neocortex in the brain (virus has no preference for neurons in a specific brain region) → virus travels to neuronal body (soma) to replicate → virus moves anterograde via peripheral nerves from CNS to salivary glands, adrenal cortex, and pancreas → virus enters acinar cells of salivary glands and buds at apical surface of mucous cells to release virus in saliva
+          <div class="indent">Virus is hidden from immune response and is highly neurotropic with no viremic phase</div>
+          <div class="indent"><em>Clinical phases –</em></div>
+          <div class="indent2"><strong>Prodromal (CNS viral spread)</strong> – premonitory sign indicating the onset of disease that is 2-3 days in dogs and 1-2 days in cats → mood changes (apprehension, nervousness, solitude, friendly animals turn shy and fractious animals turn docile and affectionate), variable fever, pupils dilated, slow palpebral/corneal reflex, lick at bite site, pruritis</div>
+          <div class="indent2"><strong>Furious (forebrain involvement)</strong> – common stage in affected cats where the virus replicates in the limbic system of the brain → restlessness, excitable, roaming, aggressive, vicious, photophobic, hyperesthetic, pica, incoordination, disorientation, seizures</div>
+          <div class="indent2"><strong>Paralytic (apoptosis)</strong> – occurs usually within 10 days of other signs but may occur early or alone and is a more common phase seen in dogs in which the virus has reached the neocortex of the brain → earliest lower motor neuron signs occur near site of entry and progress (weakness, paralysis), laryngeal paralysis (altered bark, drooling, frothing at mouth, hydrophobia), dropped jaw → death usually within 2-4 days</div>
+          <div class="indent2"><strong>Death</strong></div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> clinical suspicion (clinical signs, vaccination history of not vaccinated, known/potential exposure from bite wound or dog fight)
+          <div class="indent">Rabies should be considered in any animal that suddenly develops profound behavior changes or features of low motor neuron paralysis or both, especially in the unvaccinated.</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis: laboratory findings</span></div>
+        <div class="indent"><em>Histopathologic exam</em> – negri bodies (intracytoplasmic inclusions or aggregates of virus nucleocapsids) and perivascular cuffing → negri bodies are rarely developed in cats and has a poor diagnostic yield</div>
+        <div class="indent"><em>Direct fluorescent antibody test</em> – primary test (rapid, sensitive, reproducible) for rabies in animals that bite humans → performed on fresh or refrigerated bilateral nervous tissue (brain) including the hippocampus, cerebellum, and medulla oblongata → all animals with virus in saliva should be positive</div>
+        <div class="field"><span class="label">Prevention:</span> all dogs, cats, and ferrets should be vaccinated (no modified live available) by a licensed veterinarian at 3 months of age and no earlier due to inference of maternal antibodies → immunity is conferred in approx. 28 days → vaccinate again 1 year later and either annual or triennial thereafter depending on labeling of the product used
+          <div class="indent">Rabies certificate must include, ink signature or verifiable digital signature of license veterinarian, name/address/telephone number of owner, pet's name/breed/size/sex/age/species/color, vaccine name/manufacturer/serial number/expiration date/duration of immunity, rabies tag number, date the vaccine was administered, name/address/license number of veterinarian who administered or supervised the administration of the vaccine, and due date of the next rabies vaccination</div>
+        </div>
+        </div>
+      </div>
+
+      <div id="myco" class="disease-content">
+        <div class="notes-body">
+        <h2>Mycobacterium</h2>
+        <div class="field"><span class="label">Agent:</span> aerobic, nonmotile, non-spore-forming, pleomorphic rod bacteria – intracellular pathogen
+          <div class="indent">Mycobacterium is more resistant to disinfection than many other pathogens</div>
+        </div>
+        <div class="field">Clinical manifestation is based on three primary factors –</div>
+        <div class="indent"><strong>1. Route of infection</strong></div>
+        <div class="indent2"><em>Pulmonary Mycobacterium</em> – pneumonia, pulmonary mass lesions (granulomas), tracheobronchial lymphadenopathy, pleural or pericardial effusion, pyothorax → clinical signs include cough, tachypnea, dyspnea, and cyanosis</div>
+        <div class="indent2"><em>GI Mycobacterium</em> – granulomatous lesions, palpable mesenteric lymph nodes, abdominal effusion → clinical signs include weight loss, anorexia or hyporexia, vomiting, and diarrhea</div>
+        <div class="indent2"><em>Cutaneous Mycobacterium</em> – dermal nodules, non-healing wounds with draining tracts, ulcerative lesions → common lesion sites include face, abdomen, extremities, tail base, perineum, ventral thorax, and can occur as oropharyngeal lesions, CNS disease, uveitis, chorioretinitis, musculoskeletal lesions, hepatic disease (icterus), and more</div>
+        <div class="indent"><strong>2. Host immune response</strong> – Mycobacterium infection sets off a complicated inflammatory cascade – macrophages are stimulated to invade tissue → cytokine production drives the recruitment of neutrophils and mononuclear cells → granuloma formation</div>
+        <div class="indent2">Mycobacterium can cause a type IV hypersensitivity (cell-mediated reaction) or delayed type hypersensitivity</div>
+        <div class="indent2">Defects in host immunity increases risk for disseminated disease and bacteremia</div>
+        <div class="indent"><strong>3. Type of Mycobacterium</strong></div>
+        <div class="indent2"><em>Classify based culture growth</em> – difficult to grow, slow growing (often more severe and disseminated disease), and fast growing</div>
+        <div class="indent2"><em>Tubercle formation</em> – tubercle-forming (M. tuberculosis, M. bovis, M. microtti) and non-TB (M. avium complex – MAC)</div>
+        <div class="indent2"><em>Leprosy-causing Mycobacterium</em> – M. lepraemurium can cause leproid granulomas and is difficult to grown in culture, often quickly progressive, locally spreading, cutaneous/subcutaneous nodules</div>
+        <div class="field"><span class="label">Transmission:</span> inhalation, ingestion, and contact or inoculation</div>
+        <div class="field"><span class="label">Prevalence:</span> M. tuberculosis in humans, dogs, rarely cats; M. bovis in cattle, dogs, cats; M. microtti in small rodents, cats; Miniature Schnauzers and Basset Hounds have an increased risk for M. avium complex</div>
+        <div class="field"><span class="label">Clinical signs:</span> localized or disseminated dermal lesions (nodules, ulcerated lesions, draining tracts), lymphadenopathy, fever, granulomatous/pyogranulomatous lesions (especially respiratory, GI, skin, and other – can be multiple systems)</div>
+        <div class="field"><span class="label">Diagnosis:</span></div>
+        <div class="indent"><em>Culture</em> – not all species of Mycobacterium grow in culture and many take a long time to grow (months) → need specialized laboratories</div>
+        <div class="indent"><em>PCR</em> – provides faster results but availability of testing can be an issue – fresh tissue samples are preferred</div>
+        <div class="indent"><em>Cytology or histopathology</em> – Mycobacterium has mycolic acid in cell wall = acid fast bacteria that stains clear in Diff-Quik and needs acid fast stains such as Ziehl-Neelsen for visualization → culture of PCR can help identify species</div>
+        <div class="field"><span class="label">Therapy:</span> prolonged (2-6 months) and requires a combination of antibiotic therapy (Rifampin, Fluoroquinolone, Macrolide) with potential surgical excision of lesions → treatment should be discussed with owner at the start of treatment</div>
+        <div class="field"><span class="label">Prognosis:</span> highly variable and depends on disease severity at time of diagnosis, immune status of the patient, species of bacteria, and location of infection – it can be difficult to truly clear infection</div>
+        <div class="field"><span class="label">Zoonotic potential:</span> caution with immunocompromised clients, the very young, or the very old</div>
+        </div>
+      </div>
+
+      <div id="bartonella" class="disease-content">
+        <div class="notes-body">
+        <h2>Bartonella</h2>
+        <div class="field"><span class="label">Agent:</span> gram negative, pleomorphic, fastidious (difficult to grow in culture), facultative intracellular bacteria – Alphaproteobacteria (related to Brucella, Rickettsia, Anaplasma, Wolbachia, etc.)
+          <div class="indent"><span class="label">Species most medically important for dogs and cats</span> – Bartonella henselae, Bartonella vinsonii subsp. Berkhoffii, Bartonella koehlerae</div>
+        </div>
+        <div class="field"><span class="label">Clinical manifestations:</span> acute infections are likely self-limiting and highly variable
+          <div class="indent"><em>Cardiovascular</em> – endocarditis (primarily affecting aortic valve and mitral valve), myocarditis, vasculitis, vasoproliferative diseases → consider Bartonella with aortic valve endocarditis + negative cultures</div>
+          <div class="indent"><em>Intermittent (relapsing) fever</em></div>
+          <div class="indent"><em>Granulomatous disease</em> – lymphadenitis, rhinitis, hepatitis</div>
+          <div class="indent"><em>Polyarthritis, uveitis, neurologic disease, epistaxis, and more</em></div>
+          <div class="indent">Bartonella in cats is slightly different – less pathogenic in cats than in dogs but FeLV may predispose to B. henselae infection or persistence</div>
+        </div>
+        <div class="field"><span class="label">Transmission:</span> vector borne disease (arthropod species are growing), other modes possible (stercorarian transmission, transfusions, vertical transmission, needle sticks) → Bartonella is stealthy (extensive mechanisms evade or suppress host immune response) and colonized RBCs and endothelial cells without causing hemolysis to be preserved for vector transmission, protected from immune system and contribute to decreased antibiotic efficacy
+          <div class="indent">Cats are a reservoir host for B. henselae and B. koehlerae = can be subclinically infected for months or years</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> endocarditis (aortic valve, culture negative), granulomatous/pyogranulomatous inflammation, vasculitis/vascular pathology, chronic relapsing fevers, partial antimicrobial response or worsening with immune suppression, history of arthropod exposures</div>
+        <div class="field"><span class="label">Diagnosis:</span></div>
+        <div class="indent"><em>Complete blood count</em> – thrombocytopenia (+/- immune-mediated – cats and dogs), anemia (+/- immune-mediated – cats and dogs), neutrophilia or neutropenia (cats and dogs), eosinophilia (cats and dogs), monocytosis</div>
+        <div class="indent"><em>Serum chemistry</em> – hypoalbuminemia, hyperglobulinemia (cats and dogs)</div>
+        <div class="indent"><em>Serology</em> – poorly sensitive due to Bartonella's ability to evade the immune system and positive serology could indicate past exposure or non-active infection in healthy dogs (chronic infections) → 4-fold increase in serologic titers observed over 2-3 weeks indicates seroconversion and active infection but titers decrease rapidly (3-6 months) with treatment</div>
+        <div class="indent"><em>PCR</em> – false negatives are common due to low levels of organisms and cyclic bacteremia and previous antibiotics can increase chance for false negatives – positive PCR in sick dogs can suggest true infection</div>
+        <div class="indent"><em>Culture</em> – Bartonella is fastidious and slow-growing = requires specific nutrients in growth media</div>
+        <div class="indent2"><strong>Bartonella Alphaproteobacteria Growth Medium (BAPGM)</strong> – culture samples are incubated in specialized liquid culture medium for 7 days, then followed by PCR assay → most sensitive diagnostic (recommend a triple draw)</div>
+        <div class="indent"><em>Cytology or histopathology</em> – even with severe inflammatory lesions, the bacteria can be hard to visualize → special stains or immunohistochemistry can be used to increase sensitivity</div>
+        <div class="indent">Co-infections are possible, so screening for other vector-borne diseases is recommended</div>
+        <div class="indent">Serology and PCR are both often submitted</div>
+        <div class="field"><span class="label">Therapy:</span> optimal protocol not yet established, but doxycycline plus a fluoroquinolone is recommended → long duration of antibiotic may be necessary (4-6 weeks) to eliminate infection if bacteremia is persistent
+          <div class="indent">Some species of Bartonella can develop rapid resistance to macrolides like azithromycin</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> highly variable and depends on disease severity at time of diagnosis, immune status of the patient, species of bacteria, and location of infection – it can be difficult to truly clear infection</div>
+        <div class="field"><span class="label">Prevention:</span> flea/tick prevention, indoor lifestyle for cats is preferable to reduce risk of flea infestation</div>
+        <div class="field"><span class="label">Zoonosis potential:</span> Bartonella henselae is the causative agent of "cat scratch disease"</div>
+        </div>
+      </div>
+
+      <div id="mycoplasma" class="disease-content">
+        <div class="notes-body">
+        <h2>Mycoplasma haemofelis</h2>
+        <div class="field"><span class="label">Agent:</span> small, pleomorphic, gram-negative (but does not have cell wall) bacteria (cocci, rings, rods) that can form short (3-8) chains and lives on surface of RBCs (epicellular or epierythrocytic) – causes hemolytic anemia
+          <div class="indent"><span class="label">Major species that infect cats</span> – Mycoplasma haemofelis (causative agent of feline infectious anemia), Candidatus Mycoplasma haemominutum, and Candidatus Mycoplasma turcinesis</div>
+        </div>
+        <div class="field"><span class="label">Transmission:</span> biting and aggressive interactions, fleas and other arthropods, vertical transmission, blood transfusion (PCR screening for blood donors)</div>
+        <div class="field"><span class="label">Prevalence:</span> hemotropic Mycoplasmas (hemoplasmas) infect a wide range of species – Mycoplasma haemofelis is most common in male, non-pedigree, older cats with outdoor access</div>
+        <div class="field"><span class="label">Clinical signs:</span> pale mucous membranes, tachycardia, fever, weakness, lethargy, inappetence</div>
+        <div class="field"><span class="label">Diagnosis:</span></div>
+        <div class="indent"><em>Complete blood count</em> – regenerative anemia (often severe)</div>
+        <div class="indent"><em>Serum chemistry</em> – +/- hyperbilirubinemia (if present, likely mild), +/- bilirubinuria (if hyperbilirubinemic), +/- elevated ALT</div>
+        <div class="indent"><em>FeLV/FIV test</em> – studies are conflicting but may have shared risk factors/exposures especially for FIV and cats with immune compromise from concurrent viral infection may have more severe disease → test for FeLV/FIV</div>
+        <div class="indent"><em>PCR</em> – sensitive, specific, and can help differentiate from other hemoplasmas but is not always needed – submit prior to antibiotics if possible → PCR may be false negative if cat received antibiotics before submission, Mycoplasma numbers in blood are low and fluctuate</div>
+        <div class="indent"><em>Cytology</em> – alone has poor sensitivity (can get false negatives) so have a pathologist review → cytology may be false positive if stain precipitate or Howell-Jolly bodies were falsely identified as Mycoplasma in RBCs = keep stain fresh and send a blood smear with EDTA tube if sending sample out for cytology</div>
+        <div class="indent"><em>Culture</em> – hemoplasmas cannot be cultured</div>
+        <div class="field"><span class="label">Therapy:</span> due to Mycoplasma not having a cell wall, antibiotics that target cell walls like beta-lactams should not be administered → first stabilize patient → administer doxycycline for at least 2 weeks as first-line treatment (follow doxycycline administration with food or water to encourage complete swallowing to prevent esophageal stricture in cats) → fluoroquinolone is considered the second line choice
+          <div class="indent">Corticosteroids are not typically indicated</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> anemia may improve, but clearance of infection is difficult, and reactivation of infection can occur → prognosis is generally good if immune competent and prompt therapy</div>
+        <div class="field"><span class="label">Prevention:</span> flea and tick prevention, reduce outdoor lifestyle</div>
+        </div>
+      </div>
+
+      <div id="rickettsial" class="disease-content">
+        <div class="notes-body">
+        <h2>Rickettsial Diseases</h2>
+        <h3>Ticks</h3>
+        <div class="field"><em>Questing behavior:</em> ticks detect animals' breath and body odors or by sensing body heat, moisture, and vibrations</div>
+        <div class="field"><em>Transovarial transmission:</em> infection passed from arthropod parents to offspring</div>
+        <div class="field"><em>Transstadial transmission:</em> infection passed from one life stage to the next (larva → nymph → adult)</div>
+
+        <h3>Family Anaplasmataceae (Anaplasma spp., Ehrlichia spp., Neorickettsia spp., Rickettsia spp.)</h3>
+        <div class="field"><span class="label">Common features:</span> Gram – obligate intracellular bacteria forming morulae and infecting leukocytes, erythrocytes, and platelets but require arthropod vector</div>
+        <div class="field"><span class="label">Life cycle:</span> tick attaches to host for 24-48 hours → bacteria is transferred from the tick salivary glands into the subcutaneous tissues of the host → bacteria within dense core cells bind to surface of the host cell → the infectious dense core cell enters the host cell via receptor mediated endocytosis forming a phagolysosome → formation of phagolysosome results in morulae formation with replication via binary fission to produce dense core cells → dense core cells are liberated from the cells by exocytosis or cell lysis → incubation period of 1-2 weeks in the dog</div>
+        <div class="field"><span class="label">Therapy:</span> doxycycline will treat all</div>
+        <div class="field"><span class="label">Prevention:</span> tick control</div>
+
+        <h3>Order Rickettsiales</h3>
+        <div class="sub-section"><span class="sub-header">Canine monocytic erlichiosis</span></div>
+        <div class="field"><span class="label">Etiology:</span> Ehrlichia canis</div>
+        <div class="field"><span class="label">Prevalence:</span> worldwide distribution → disease in dogs</div>
+        <div class="field"><span class="label">Tick vector:</span> Rhipicephalus sanguineus (brown dog tick) – 3 host tick</div>
+        <div class="field"><span class="label">Cell tropism:</span> monocytes</div>
+        <div class="field"><span class="label">Pathogenesis:</span> 3 stages with thrombocytopenia in all stages!
+          <div class="indent"><em>Acute stage</em> (1-4 weeks long) – 8-20 day incubation with replication of organism in reticuloendothelial tissues (splenomegaly, lymphadenopathy) → vasculitis → platelet disfunction and immune-mediated thrombocytopenia → recover in 2-4 weeks and clear or become carrier</div>
+          <div class="indent"><em>Subclinical stage</em> (months to years long) – sequestration of organism in spleen → antigenic variation to evade hose immune response → recover or become chronic</div>
+          <div class="indent"><em>Chronic stage</em> – severe disease – pancytopenia, bone marrow hypoplasia, marked granular lymphocytosis and bone marrow plasmacytosis with monoclonal gammopathy can lead to misdiagnosis of leukemia or plasmacytoma → death due to hemorrhage and secondary infections</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> lethargy, inappetence, fever, lameness, weight loss, epistaxis, petechia or ecchymoses, neuro signs, hyphema, dyspnea</div>
+        <div class="field"><span class="label">Diagnosis:</span> thrombocytopenia (mild in subclinical phase), pancytopenia in chronic phase with some moderate to marked granular lymphocytosis, hypoalbuminemia, hyperglobulinemia (usually polyclonal but can be monoclonal), increased clotting times → 100% probability of death with severe leukopenia, severe anemia, and increased aPTT
+          <div class="indent">IFA (immunofluorescent antibody) = gold standard and can be elevated for over a year</div>
+          <div class="indent">Idexx SNAP 4Dx</div>
+          <div class="indent">PCR = performed before antibiotics and best in acute phase but useful in all</div>
+        </div>
+
+        <div class="sub-section"><span class="sub-header">Canine granulocytic erlichiosis</span></div>
+        <div class="field"><span class="label">Etiology:</span> Ehrlichia ewingii</div>
+        <div class="field"><span class="label">Prevalence:</span> Oklahoma, Arkansas, Missouri, Kansas → disease in dogs, humans, and goats</div>
+        <div class="field"><span class="label">Tick vector:</span> Amblyomma americanum (lone star tick) – 3 host tick</div>
+        <div class="field"><span class="label">Cell tropism:</span> granulocytes, primarily neutrophils</div>
+        <div class="field"><span class="label">Pathogenesis:</span> only acute disease with 3-4 week long incubation period</div>
+        <div class="field"><span class="label">Clinical signs:</span> may be clinically unapparent, fever, lethargy, anorexia → neutrophilic polyarthritis</div>
+
+        <div class="sub-section"><span class="sub-header">Rocky Mountain Spotted Fever</span></div>
+        <div class="field"><span class="label">Etiology:</span> Rickettsia rickettsii</div>
+        <div class="field"><span class="label">Prevalence:</span> disease in dogs and humans</div>
+        <div class="field"><span class="label">Tick vector:</span> Dermacentor spp. (American dog tick) – 3 host tick</div>
+        <div class="field"><span class="label">Cell tropism:</span> endothelial cells</div>
+        <div class="field"><span class="label">Pathogenesis:</span> transfer of organism in hours → endotheliotropism results in vasculitis</div>
+        <div class="field"><span class="label">Clinical signs:</span> abnormal hemostasis, edema, microthrombosis, hypovolemia, petechiae, hypoalbuminemia, thrombosis, and necrosis</div>
+        <div class="field"><span class="label">Diagnosis:</span> culture, PCR, tissue IFA, convalescent serology</div>
+        <div class="field"><span class="label">Public health:</span> reportable in humans and in dogs in some states and counties, dogs and people can be infected by ticks in same environment (transovarial transmission), needle sticks pose a risk</div>
+
+        <div class="sub-section"><span class="sub-header">Canine cyclic thrombocytopenia</span></div>
+        <div class="field"><span class="label">Etiology:</span> Anaplasma platys</div>
+        <div class="field"><span class="label">Prevalence:</span> worldwide distribution → disease in dogs</div>
+        <div class="field"><span class="label">Tick vector:</span> Rhipicephalus sanguineus (brown dog tick) – 3 host tick</div>
+        <div class="field"><span class="label">Cell tropism:</span> thrombocytes (platelets)</div>
+        <div class="field"><span class="label">Pathogenesis:</span> 1-2 week incubation period → 2-3 weeks post infection is platelet nadir that normalize in 3-4 weeks → cycles of bacteremia and thrombocytopenia every 1-2 weeks</div>
+        <div class="field"><span class="label">Clinical signs:</span> sometimes lethargy, fever, lymphadenopathy, uveitis, mucosal hemorrhages</div>
+        <div class="field"><span class="label">Diagnosis:</span> thrombocytopenia</div>
+
+        <div class="sub-section"><span class="sub-header">Canine granulocytic anaplasmosis</span></div>
+        <div class="field"><span class="label">Etiology:</span> Anaplasma phagocytophilum</div>
+        <div class="field"><span class="label">Prevalence:</span> worldwide distribution → disease in dogs, cats, humans, and horses</div>
+        <div class="field"><span class="label">Tick vector:</span> Ixodes scapularis of Midwest and East Coast and Ixodes pacificus of West Coast (blacklegged tick or deer tick) – 3 host tick</div>
+        <div class="field"><span class="label">Cell tropism:</span> granulocytes, primarily neutrophils → morulae indistinguishable from Ehrlichia ewingii</div>
+        <div class="field"><span class="label">Pathogenesis:</span> acute disease with 1-2 week incubation period</div>
+        <div class="field"><span class="label">Clinical signs:</span> most dogs are not clinical – febrile illness often self-limiting, lameness, lymphadenopathy, splenomegaly, bleeding due to coinfections</div>
+        <div class="field"><span class="label">Diagnosis:</span> thrombocytopenia in 90% of dogs, neutrophilia or neutropenia, mild ALP elevations, morulae may appear in neutrophils 4-8 days PI
+          <div class="indent"><em>Convalescent serology</em> – antibodies may persist for months and 25-40% of clinical dogs are antibody negative at time of diagnosis</div>
+          <div class="indent"><em>PCR</em> – before antibiotic administration</div>
+        </div>
+        </div>
+      </div>
+
+      <div id="lyme" class="disease-content">
+        <div class="notes-body">
+        <h2>Lyme Disease</h2>
+        <div class="field"><span class="label">Etiology:</span> Borrelia burgforferi sensu stricto – motile spirochete</div>
+        <div class="field"><span class="label">Tick vector:</span> Ixodes scapularis of Midwest and East Coast and Ixodes pacificus of West Coast (blacklegged tick or deer tick) – 3 host tick</div>
+        <div class="field"><span class="label">Prevalence:</span> most commonly reported vector-born disease in humans in the US; 6.5-85% seroprevalence in dogs in endemic areas (85% of cases in eastern coastal states MA/VA, 10% of cases in MN/WI, 4% of cases in northern CA)
+          <div class="indent">10% of MN dogs tested were positive for Lyme C6 antibodies → 5-10% of seropositive dogs develop clinical Lyme disease → &lt;1-2% develop Lyme nephritis</div>
+        </div>
+        <div class="field"><span class="label">Transmission:</span> outer surface proteins (Osp) – ticks express OspA in which the spirochete is within the tick midgut before taking a blood meal → expression of OspC and movement of the spirochete into the tick salivary glands are induced during the tick taking a blood meal → about 48 hours of tick attachment</div>
+        <div class="field"><span class="label">Pathogenesis:</span> synovial tissue (macrophages, T cells, B cells, plasma cells) and joint fluid (NEUTROPHILS, immune complexes, complement, inflammatory Th1 cytokines), glomerulonephritis in young dogs (antibody-antigen complexes, causes protein loss in urine – albumin, antithrombin III)</div>
+        <div class="field"><span class="label">Clinical signs:</span>
+          <div class="indent"><em>Polyarthropathy</em> – develops 2-5 months after tick bite, fever, inappetence, lameness affecting one to multiple joints with shifting leg lameness (first joint effected is closest to tick bite)</div>
+          <div class="indent"><em>Lyme nephritis</em> – 30% have concurrent polyarthritis, weight loss, vomiting, polyuria, polydipsia</div>
+        </div>
+        <div class="field"><span class="label">Physical exam findings:</span> fever, lameness, joint effusion common, generalized lymphadenopathy; findings indicating Lyme nephritis include thin BCS, dehydration, peripheral edema, pleural effusion, ascites, hypertension, and retinal detachment</div>
+        <div class="field"><span class="label">Diagnosis:</span></div>
+        <div class="indent"><em>Synovial fluid</em> – marked numbers of nondegenerate neutrophils (&gt;5000 and often &gt;10,000 cells/ul)</div>
+        <div class="indent"><em>Serology</em> – VlsE (variable major protein-like expressed) is an antigenically carriable cell-surface protein on the organism that evades the antibody response by continuously changing its surface epitopes → C6 is an invariable region of the VlsE
+          <div class="indent2">OspC in early infection, OspF in chronic infection (correlates with C6), OspA in vaccination</div>
+          <div class="indent2"><strong>Idexx 4Dx Plus ELISA</strong> – detects C6 protein → false negatives are rare, no cross reaction with vaccine</div>
+          <div class="indent2"><strong>Idexx QuantC6 ELISA</strong> – detects C6 protein → no correlation with disease severity</div>
+          <div class="indent2"><strong>Zoetis VetScan Lyme Rapid Test</strong> – detects diff. VlsE lipoprotein, OspC, and p41 (flagellin) → new test with little information on validation</div>
+          <div class="indent2"><strong>Western blot</strong> – detects B. burgdorferi antigens → technically difficult but can distinguish natural infection, vaccination or both</div>
+          <div class="indent2"><strong>Multiplex fluorescent bead</strong> – detects OspA, OspC, and OspF → sensitivity, specificity in natural infection unknown</div>
+          <div class="indent2"><strong>Antech Accuplex 4</strong> – detects OspA, OspC, OspF, SLP, and P39 → less sensitive and specific for B. burgdorferi and 4Dx</div>
+        </div>
+        <div class="indent"><em>Urinalysis</em> – for all seropositive dogs → proteinuria present before onset of clinical signs is associated with Lyme nephritis → consider renal biopsy for suspect Lyme nephritis cases early in the course of disease to identify immune-complexes in the glomerular basement membrane (NOT Borrelia specific)</div>
+        <div class="field"><span class="label">Treatment:</span> doxycycline (5-10 mg/kg PO BID x 28 d) or amoxicillin (20 mg/kg PO TID x 28 d) → most dogs with Lyme arthropathy respond to treatment in 1-2 days → additional therapy for Lyme nephritis includes immunosuppressives, anti-hypertensives, angiotensin receptor blockers, anti-thrombotics
+          <div class="indent">Chronic or additional antibiotics are unlikely to be necessary and unlikely to be effective</div>
+        </div>
+        <div class="field"><span class="label">Prevention:</span> flea-tick preventatives 12 months a year, tick removal within 24 hours, vaccination</div>
+        </div>
+      </div>
+
+      <div id="plague" class="disease-content">
+        <div class="notes-body">
+        <h2>Plague</h2>
+        <div class="field"><span class="label">Etiology:</span> Yersinia pestis, Gram – nonmotile, coccobacillus, "safety pin" appearance → causative agent of Black Death</div>
+        <div class="field"><span class="label">Sources:</span> infection maintained by the flea-rodent-flea cycle – prairie dogs, rock squirrels and ground squirrels are common wild hosts</div>
+        <div class="field"><span class="label">Persistence:</span> sensitive to desiccation and heat &gt;40 Celsius, persists weeks to months in organic material, may persist for years in cold temperatures or freezing temperatures</div>
+        <div class="field"><span class="label">Prevalence:</span> occurs in the US (Southwestern states, Colorado, New Mexico, Arizona) in semiarid, cooler climates adjacent to deserts any time of year but mostly late spring to early fall → cats are highly susceptible like humans, and dogs develop only mild clinical signs with seroconversion</div>
+        <div class="field"><span class="label">Transmission:</span> bites from infected fleas, contact with mucous membranes or broken skin, droplets from animals with pneumonic plague</div>
+        <div class="field"><span class="label">Pathogenesis:</span></div>
+        <div class="indent"><strong>Three clinical forms:</strong></div>
+        <div class="indent2"><em>Bubonic plague</em> (most common and least lethal) – acquired by rodent ingestion and may spread and progress to septicemic or pneumonic phase → clinical signs include fever, dehydration, submandibular lymphadenitis, hyperesthesia</div>
+        <div class="indent2"><em>Septicemic plague</em> (with or without bubo formation) – hematogenous spread may result in virtually every organ being involved but is most common in the lungs of cats → clinical signs include septic shock (anorexia, tachycardia, vomiting, diarrhea, weak pulse, hypotension, leukocytosis) → typically fatal within 1-2 days</div>
+        <div class="indent2"><em>Pneumonic plague</em> – caused by inhalation of infectious droplets or from septicemic plague and is a significant risk to owners, veterinarians, and others in close contact due to aerosolization of bacteria → clinical signs similar to septicemic plague with pulmonary involvement</div>
+        <div class="field"><span class="label">Diagnosis:</span> consider plague in any febrile cat in or traveled to endemic areas! → collect samples (whole blood, lymph node aspirates, swabs from draining lesions, oropharyngeal swabs) then begin antimicrobial therapy before diagnosis is confirmed → avoid contact with purulent material and submit culture samples and fixed slides to appropriate authorities (contact health department)
+          <div class="indent"><em>Gram stain</em> – monomorphic population of Gram – organisms with bipolar "safety pin" morphology</div>
+          <div class="indent"><em>Serology</em> – two samples 10-14 days apart and need 4-fold increase to confirm diagnosis → titers commonly persist over 1 year after exposure in endemic areas</div>
+          <div class="indent"><em>Thoracic radiographs</em></div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> isolate patient for 48-72 hours or longer if pneumonic and handle patients with PPE, examine for and eliminate fleas immediately if found, lance buboes and flush with chlorhexidine, handle wastes from flushes appropriately
+          <div class="indent"><em>Antimicrobials</em> – aminoglycosides are most effective (Gentamicin), doxycycline for bubonic form, fluoroquinolones and TMS are effective, chloramphenicol if CNS involved → treat for at least 21 days, tetracycline for 7 days for exposure</div>
+        </div>
+        <div class="field"><span class="label">Prevention:</span> flea control, prevent contact with burrows or carcasses of dead rodents and lagomorphs, minimize environmental attraction for rodents, high awareness in veterinary hospitals in endemic areas, no approved vaccines</div>
+        <div class="field"><span class="label">Public health:</span> highly contagious with about 25% of infected humans being veterinarians or technicians, 11% mortality in humans in US (late diagnosis increase fatality rate), advise owners to contact their physician</div>
+        </div>
+      </div>
+
+      <div id="tularemia" class="disease-content">
+        <div class="notes-body">
+        <h2>Tularemia</h2>
+        <div class="field"><span class="label">Etiology:</span> Francisella tularensis, Gram – aerobic, encapsulated, coccobacillus with cell tropism for macrophages</div>
+        <div class="field"><span class="label">Prevalence:</span> occur in temperate regions of the Northern Hemisphere and all US states except Hawaii – sporadic in MN in spring and early summer</div>
+        <div class="field"><span class="label">Transmission:</span> predation of infected rodents, tick bites from Dermacenter spp. and Amblyomma americanum, biting flies</div>
+        <div class="field"><span class="label">Pathogenesis:</span> cutaneous inoculation → 1-5 day incubation period → replicates locally as an ulcerated papule → local lymph node dissemination (lymphadenopathy) → systemic spread to reticuloendothelial organs leading to sepsis and inflammatory responses with necrosis</div>
+        <div class="field"><span class="label">Four clinical forms:</span> ulceroglandular (localized infection of the skin and draining lymph nodes), typhoidal (severe systemic infection), oropharyngeal (involving the oral cavity), pneumonic (affecting the lungs)</div>
+        <div class="field"><span class="label">Clinical signs:</span> typically in cats (dogs less clinical) – acute onset high fever, lethargy, inappetence, peripheral +/- lymphadenopathy, lingual ulceration, hepatomegaly, splenomegaly, +/- ulcerated cutaneous papule</div>
+        <div class="field"><span class="label">Diagnosis:</span> consider in cats and dogs with lymphadenopathy and high fever with access to outdoors and especially with history of predation → reportable disease (contact Board of Animal Health)
+          <div class="indent"><em>Culture</em> – requires VSL 3 laboratory</div>
+          <div class="indent"><em>PCR</em></div>
+          <div class="indent"><em>Serology</em> – acute and convalescent (3 weeks) may be needed</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> antibiotics for 2-3 weeks (tetracyclines, fluoroquinolones, aminoglycosides), supportive care with IV fluids and antinausea medications</div>
+        <div class="field"><span class="label">Prognosis:</span> life-threatening disease and early diagnosis and treatment is required for survival → many cats diagnosed postmortem</div>
+        <div class="field"><span class="label">Public health:</span> reportable disease in MN, BSL 3 organism, risk to owner and veterinary staff</div>
+        </div>
+      </div>
+
+      <div id="mycoses" class="disease-content">
+        <div class="notes-body">
+        <h2>Systemic Mycoses</h2>
+
+        <div class="sub-section"><span class="sub-header">Blastomycosis</span></div>
+        <div class="field"><span class="label">Agent:</span> Blastomyces dermatitidis lives as a mycelial form in the environment that generates infective spores in which the spores transform into yeast at body temperature when inhaled → big (5-20 um), blue, budding yeast with thick refractile, double contoured wall and broad-based bud
+          <div class="indent">Found near water and sandy soil, by decaying wood, animal waste, excavation sites, and beaver dams</div>
+        </div>
+        <div class="field"><span class="label">Transmission:</span> inhalation of spores</div>
+        <div class="field"><span class="label">Prevalence:</span> affects dogs (young, healthy, large breeds) and humans → most common in the midwestern, mid-Atlantic and southeastern states (Ohio, Mississippi, Missouri, and St. Laurence River basins and Great Lakes region) → most common mycotic disease in MN and WI</div>
+        <div class="field"><span class="label">Pathophysiology:</span> incubation period of about 1-3 months (often mid to late summer/early fall) following inhalation → disseminates via vessels and lymphatics to eyes (40%), skin (25%), bone (25%), CNS, and other organs → asexual reproduction (budding) within the host → elicits pyogranulomatous (neutrophils and macrophages) inflammation</div>
+        <div class="field"><span class="label">Manifestations</span> – uveitis, conjunctivitis, chorioretinitis, optic neuritis, ulcerative skin lesions with serosanguineous to purulent drainage, &gt;85% of cases have fungal pneumonia</div>
+        <div class="field"><span class="label">Clinical signs:</span> fever, anorexia, weight loss, lymphadenopathy</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Imaging</em> – diffuse, interstitial nodular infiltrate is most common pulmonary pattern on radiographs, but other patterns (alveolar, mass) are common and multiple patterns can co-exist</div>
+          <div class="indent"><em>CBC</em> – general inflammation → leukocytosis, mild non-regenerative anemia</div>
+          <div class="indent"><em>Chemistry</em> – general inflammation → hypoalbuminemia, hyperglobulinemia (acute phase protein changes) → rare hypercalcemia due to vitamin D activation by macrophages</div>
+          <div class="indent"><em>Cytology</em> – primary diagnostic → eg. lymph node aspirate</div>
+          <div class="indent"><em>Blastomyces urine antigen (BUA) test</em> – high sensitivity and specificity, great for respiratory cases when cytologic sampling is difficult, can be sued during monitoring and is possibly predictive of outcomes, results can take days to a week, cross reacts with Histoplasma</div>
+          <div class="indent"><em>Serology</em> – lower sensitivity</div>
+          <div class="indent"><em>Biopsy</em> – more invasive</div>
+          <div class="indent"><em>Culture</em> – lower sensitivity, slow growth, risky</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> duration is long, at least 60 days but most require 6+ months with treatment lasting one month beyond resolution of detectable disease → discontinue treatment when clinical disease is gone and BUA is negative or weak + without further decline
+          <div class="indent">Itraconazole 5 mg/kg SID (sometimes BID for first 1-2 weeks) → use microencapsulated and give with food and do not give with antacids → expensive therapy</div>
+          <div class="indent">Fluconazole is an alternative treatment with greater penetration into the CNS, eyes, and urogenital tract → cheaper, fewer side effects, but unclear if it works as well</div>
+          <div class="indent">Primary adverse effects of azoles – GI toxicity (anorexia, vomiting), hepatic toxicosis (increased ALT), cutaneous reactions (dermatitis, vasculitis)</div>
+          <div class="indent">Amphotericin B is an alternative treatment but is not first line treatment due to nephrotoxicity and potential for thrombophlebitis and anaphylaxis → reserved for severe cases failing to respond to azoles or with toxicities → intensive treatment with IVF/diuresis given during treatment (3x weekly for 4 weeks)</div>
+          <div class="indent">Anti-inflammatory used as adjunctive therapy – short course of NSAID or inflammatory dose of glucocorticoids can help with fever and pain</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> poor to fair with a 15-25% mortality – negative prognostic indicators include severe pulmonary involvement, CNS involvement, or more than 3 body systems affected → about 20% relapse in the first year</div>
+        <div class="field"><span class="label">Zoonotic:</span> reportable disease due to risk to humans and is an environmental source; direct animal-human transmission is rare</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Histoplasmosis</span></div>
+        <div class="field"><span class="label">Agent:</span> Histoplasma capsulatum lives as a mycelial form in the environment that generates infective spores in which the spores transform into yeast at body temperature when inhaled or ingested and is phagocytized by mononuclear cells (intranuclear) → small, round, intracellular yeast (2-4 um) with round basophilic center and thin clear halo
+          <div class="indent">Found in soil in warm, moist, humid regions with bird and bat feces being a common source</div>
+        </div>
+        <div class="field"><span class="label">Transmission:</span> inhalation or ingestion of spores</div>
+        <div class="field"><span class="label">Prevalence:</span> affects dogs, cats, and humans → most common systemic mycotic infection in North America and prevalent in temperate and tropical climates worldwide – Ohio, Mississippi, and Missouri Rivers
+          <div class="indent">Increased risk seen in large breeds (Pointers, Weimaraners, Brittany Spaniels), young dogs and cats, and immunocompromised individuals</div>
+        </div>
+        <div class="field"><span class="label">Pathophysiology:</span> incubation period of about 2 weeks after inhalation or ingestion → disseminates via vessels and lymphatics with marked predilection for macrophages and most often affecting lungs and intestines → elicits pyogranulomatous (neutrophils and macrophages) inflammation</div>
+        <div class="field"><span class="label">Clinical signs:</span> subclinical infections are common but can cause large or small bowel disease, lymphadenopathy, hepatosplenomegaly → results in diarrhea, melena, hematochezia, PLE, weight loss with uncommon signs being bone, ocular, dermal lesions, CNS involvement, oral lesions in cats, and diarrhea in cats</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Imaging</em> – diffuse interstitial miliary to nodular infiltrate appearance on thoracic radiographs (fungal pneumonia pattern is referred to as the "snowstorm effect")</div>
+          <div class="indent"><em>Endoscopy</em> – thickened, friable, hemorrhagic, or ulcerated intestines</div>
+          <div class="indent"><em>CBC</em> – general inflammation (leukocytosis, mild non-regenerative anemia) and uncommonly bone marrow disease (leukocytopenia, severe anemia, thrombocytopenia)</div>
+          <div class="indent"><em>Chemistry</em> – general inflammation → hypoalbuminemia, hyperglobulinemia (acute phase protein changes) → uncommonly hypercalcemia and elevated liver enzymes</div>
+          <div class="indent"><em>Cytology</em> – primary diagnostic → LN, liver, spleen, lung, bone marrow aspirates and rectal scraping</div>
+          <div class="indent"><em>Histoplasma urine antigen (HUA) test</em> – high sensitivity and specificity but cross reacts with Blastomyces</div>
+          <div class="indent"><em>Serology</em> – lower sensitivity</div>
+          <div class="indent"><em>Biopsy</em> – more invasive</div>
+          <div class="indent"><em>Culture</em> – lower sensitivity, slow growth, risky</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> duration is long, at least 60 days but most require 4-6 months with treatment lasting one month beyond resolution of detectable disease
+          <div class="indent">Itraconazole (5-10 mg/kg SID-BID) is drug of choice for treatment, but Amphotericin B can be concurrently for severe disseminated disease</div>
+          <div class="indent">Glucocorticoids are NOT recommended as immunosuppression increases risk for dissemination</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> poor to fair with a 25% mortality rate as nearly all survive to hospital discharge, but difficult to cure – negative prognostic indicators include CNS, ocular or boney involvement and positive prognostic indicator includes localized respiratory infection</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Coccidioidomycosis (Valley Fever)</span></div>
+        <div class="field"><span class="label">Agent:</span> Coccidioides immitis lives as a mycelial form in the environment that generates infective spores which converts into a spherule when inhaled and exposed to carbon dioxide → large, non-budding spherules are 20-200 um in size and are endospore-filled</div>
+        <div class="field"><span class="label">Prevalence:</span> affects dogs and humans &gt; cats → found in hot, semi-arid regions with sandy, alkaline soil in the southwestern US → epidemics can occur after dust storms or earthquakes</div>
+        <div class="field"><span class="label">Transmission:</span> inhalation or rare inoculation of spores</div>
+        <div class="field"><span class="label">Pathophysiology:</span> incubation period of 1-3 weeks after inhalation of spores → commonly affects lungs, bones, eyes, heart but can also affect testes, brain, spinal cord, visceral organs, or skin → elicits pyogranulomatous (neutrophils + macrophages) inflammation
+          <div class="indent">Disseminated if spread beyond hilar lymph nodes with bones being a common site (65%)</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> most cases are subclinical or mild respiratory, but dissemination can occur with pregnancy, immunosuppression, or massive exposure
+          <div class="indent">Fungal pneumonia → results in cough, fever, weight loss, anorexia, more pyogenic than other mycotic diseases</div>
+          <div class="indent">Osteomyelitis has combination of lysis and new bone production</div>
+          <div class="indent">Skin lesions (masses, abscesses, local lymphadenopathy) are most common clinical signs in cats due to direct inoculation → cats can also have respiratory, ocular, or CNS diseases</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> laboratory findings are often absent or consistent with mild general inflammation = Coccidioides is difficult to find as it is rarely seen with cytology or histology and may be hidden by neutrophils
+          <div class="indent"><em>Imaging</em> – diffuse interstitial pattern is most common but other patterns include alveolar, miliary, and nodular on thoracic radiographs</div>
+          <div class="indent"><em>Cytology</em> – poor sensitivity</div>
+          <div class="indent"><em>Antigen tests</em> – poor sensitivity of &lt;20%</div>
+          <div class="indent"><em>Serology</em> – most common diagnostic test → IgM titers are positive by about 1 week but negative by 2-4 weeks (can become positive again later with dissemination or recrudescence); IgG titers are positive by 4-6 weeks and are negative during acute infection or in immunocompromised individuals → low titers (&lt;1:16) indicate early or previous infection while high titers (&gt;1:32) indicate severe or disseminated disease but CNS infection is an exception in which titers are variable → consider repeating IgG titers in 2-4 weeks to monitor for increase and cats can have positive titers for a long time</div>
+          <div class="indent"><em>Culture</em> – not useful</div>
+          <div class="indent"><em>PCR</em> – might be an option but not widely available</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> azoles – fluconazole, itraconazole or ketoconazole (5mg/kg BID) → treated for at 12 months or may require lifelong therapy due to frequent relapses off therapy</div>
+        <div class="field"><span class="label">Prognosis:</span> good for respiratory infections, but poor to fair for disseminated disease as it is difficult to cure</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Cryptococcosis</span></div>
+        <div class="field"><span class="label">Agent:</span> Cryptococcus neoformans and Cryptococcus gatti species complex have filamentous forms in lab settings but environmental forms are unconfirmed→ young to oval yeast with narrow-base budding, thick capsule, and 4-7 um in size with capsule up to 30 um</div>
+        <div class="field"><span class="label">Transmission:</span> suspected inhalation</div>
+        <div class="field"><span class="label">Prevalence:</span> most common systemic mycosis of cats with young animals being highest at risk but can occur in dogs → ubiquitous (world-wide distribution) with bird droppings (especially pigeon) being a common source</div>
+        <div class="field"><span class="label">Clinical signs:</span> most cases are upper respiratory/nasal in cats → resulting in nasal or facial deformity ("Roman nose"), sneezing, nasal discharge, epistaxis, mass-like lesions protruding from nares, cutaneous lesions → ocular and CNS signs occur in 15% of cases and pulmonary involvement is uncommon
+          <div class="indent">Clinical signs in dogs – CNS &gt; eyes &gt; nose → results in seizures, vestibular, mentation changes and uncommon signs including cutaneous lesions, fever, lymphadenopathy, disseminated disease</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> typically lack CBC and chemistry panel abnormalities
+          <div class="indent"><em>CSF</em> – increased protein, mixed neutrophilic and mononuclear pleocytosis, crypto organisms</div>
+          <div class="indent"><em>Cytology</em> – most often diagnosed by cytology using aspirations and impression smear samples of lesions</div>
+          <div class="indent"><em>Latex cryptococcal antigen agglutination test</em> – important for diagnosis → performed on serum or CSF with 98% sensitivity and positive at 1:16 or greater → titers are important for monitoring and should decrease 2- to 4-fold/month with decrease of 10-fold over 2 weeks being a favorable prognostic indicator – persistent titer indicates lack of response or relapse</div>
+          <div class="indent"><em>Culture</em> – rarely performed as takes 6 weeks</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> treat cases until titer is negative with is 6-18 months on average and forever in FeLV+ cats → itraconazole is preferred treatment but fluconazole can be given for CNS disease or if side effects develop on itraconazole or amphotericin B if azoles fail</div>
+        <div class="field"><span class="label">Prognosis:</span> generally good to excellent but the exception is CNS disease which has a guarded prognosis</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Aspergillosis</span></div>
+        <div class="field"><span class="label">Agent:</span> Aspergillus terreus, Aspergillus deflectus, Aspergillus flavipes, and Aspergillus fumigatus are ubiquitous saprophytic fungi that are dichotomously branching fungal hyphae</div>
+        <div class="field"><span class="label">Transmission:</span> inhalation</div>
+        <div class="field"><span class="label">Prevalence:</span> German Shepherd Dogs are greatest at risk and immunosuppressed are also at increased risk (breed predisposition is critical)</div>
+        <div class="field"><span class="label">Pathophysiology:</span> disseminated via hematogenous spread after inhalation to cause multiorgan infiltrate (distinct from nasal aspergillosis)</div>
+        <div class="field"><span class="label">Diagnosis:</span> can be difficult and requires multiple tests
+          <div class="indent">Cytology, serology (some false negatives, culture</div>
+          <div class="indent"><em>Serum and urine antigen test</em> – false negatives with localized pulmonary disease and false positives with other systemic mycoses</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> azoles and/or amphotericin B → newer generation azoles such as posaconazole might improve survival times</div>
+        <div class="field"><span class="label">Prognosis:</span> generally considered grave with survival range of 0-25 months and cure is rare (&lt;10%)</div>
+        </div>
+      </div>
+
+      <div id="protozoa" class="disease-content">
+        <div class="notes-body">
+        <h2>Systemic Protozoal Diseases</h2>
+        <p>Protozoan are small, sing-cell eukaryotes that are larger than bacteria</p>
+        <div class="field">Alternating life stages – trophozoites actively feed and grow, cysts are dormant and are resistant to extreme temps/chemicals/lack of nutrition allowing survival outside of host</div>
+
+        <div class="sub-section"><span class="sub-header">Coccidia</span></div>
+        <div class="sub-section"><span class="sub-header">Neospora caninum</span></div>
+        <div class="field"><span class="label">Agent:</span> obligate intracellular protozoa within muscle and neuronal cells</div>
+        <div class="field"><span class="label">Transmission:</span> ingestion, placenta</div>
+        <div class="field"><span class="label">Lifecycle:</span> dog ingests tissue cysts in muscle tissue of intermediate host → bradyzoites released in dog duodenum → unsporulated oocyst passed in feces → sporulated oocysts in food, water, or soil → sporulated oocysts ingested by intermediate hosts
+          <div class="indent">Dog is definitive host (natural infection is not reported in cats)</div>
+          <div class="indent">3 stages – oocysts shed in dog feces, tissue cysts with bradyzoites in intermediate hosts (muscle and neuro tissue only), tachyzoites replicate after acute infection</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> most severe in puppies &lt;6 months with transplacental infections manifesting from 4 weeks – 6 months → neuro and muscular signs predominate → ascending paralysis, rigid contracture, atrophy with progression to weakness, megaesophagus and death but are typically alert or mentally appropriate
+          <div class="indent">Adult dogs – reactivation from chronic infection with multifocal CNS involvement → polymyositis or meningoencephalitis especially cerebellar (ataxia, circling, head tilt, nystagmus, tremors, seizures), occasionally myocarditis, dermatitis, pneumonia, hepatitis, also risk for death</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Chemistry</em> – elevated CK and AST if muscle involved, elevated ALT and ALP if liver involved</div>
+          <div class="indent"><em>CSF</em> – can help with brain signs and can compare antibody titers in CSF vs. serum, can perform PCR, normal to marked inflammation</div>
+          <div class="indent"><em>Fecal</em> – oocysts are rare</div>
+          <div class="indent"><em>Serology</em> – positive 2-3 weeks post-infection with titer &gt; 1:50 IgG but may need to do paired titers → test pups after 32 days of life and no serologic cross reaction</div>
+          <div class="indent"><em>Cytology or histopathology</em> – tachyzoites similar to Toxoplasma, tissue cysts primarily in neural tissue</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> clindamycin (10-12 mg/kg PO TID x at least 4 weeks) or trimethoprim-sulfa (15 mg/kg PO BID x at least 4 weeks); ponazuril is another option (20 mg/kg PO SID x at least 4 weeks) → treatment response can be partial or temporary and over 8 weeks may be needed → avoid immunosuppression → physiotherapy for those with polyradiculoneuritis-myositis
+          <div class="indent">Treat all pups in litter</div>
+        </div>
+        <div class="field"><span class="label">Prevention:</span> cook meat and don't let dogs defecate in or around feed pens or livestock</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Toxoplasma gondii</span></div>
+        <div class="field"><span class="label">Agent:</span> obligate intracellular protozoa</div>
+        <div class="field"><span class="label">Transmission:</span> ingestion, placenta, milk</div>
+        <div class="field"><span class="label">Lifecyle:</span> cat eats animal infected with bradyzoite cysts or ingests oocysts → bradyzoites or sporozoites released in cat intestine → unsporulated oocyst passed in feces → sporulated oocyst in food, water, or soil → sporulated oocysts ingested by intermediate hosts where sporozoites invade tissues and develop to tachyzoites → bradyzoites in cysts
+          <div class="indent">3 stages – oocysts with sporozoites, rapidly dividing tachyzoites that disseminate throughout the host (cause clinical disease due to tachyzoite rapid intracellular replication causing rupture of cells), tissue cysts with bradyzoites remain for life</div>
+          <div class="indent">Cat is definitive host – produces oocysts, sheds for 2-3 weeks after infection, oocysts sporulate and are infectious in 3-5 days</div>
+        </div>
+        <div class="field"><span class="label">Pathogenesis:</span> spectrum of disease from subclinical to death due to tachyzoites depends on immunocompetence</div>
+        <div class="field"><span class="label">Clinical signs in cats:</span>
+          <div class="indent">Kittens and immunocompromised – disseminated disease, reactivation via rupture of tissue cysts, overwhelming tachyzoite replication in lungs, CNS, eyes, liver, muscle, pancreas, heart, etc. → results in fever, diarrhea, dyspnea, icterus, seizures, death (esp. in neonates)</div>
+          <div class="indent">Adult cat – self-limiting diarrhea, uveitis, chorioretinitis, no signs are common (even shedding)</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs in dogs:</span>
+          <div class="indent">Neuromuscular form – long clinical course similar to Neospora and signs depend on site of location → seizures, ataxia, muscle wasting, paralysis</div>
+          <div class="indent">Disseminated form – most common in puppies with development of respiratory, hepatic and gastrointestinal signs → fever, diarrhea, vomiting, respiratory distress, icterus</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>CBC</em> – non-specific leukocytosis, neutrophilia or neutropenia, lymphocytosis, monocytosis, eosinophilia</div>
+          <div class="indent"><em>Chemistry</em> – hyperproteinemia, hyperbilirubinemia, increased ALT (liver damage), increased ALP (cholestasis), increased CK and AST (muscle damage enzymes), hyperglobulinemia (polyclonal gammopathy in chronic dogs)</div>
+          <div class="indent"><em>Imaging</em> – interstitial to alveolar lung pattern on radiographs, hepatitis or pancreatitis on abdominal ultrasound, mass lesions in brain or spinal cord on MRI</div>
+          <div class="indent"><em>Serology</em> – most frequently used test → IgM associated with recent infection with positive results within 24 weeks and negative within 16 weeks but can be positive long if FIV+, immunosuppressed or ocular involvement; IgG is detected 3-4 weeks after infection and can remain positive for year (if IgM negative, need acute and convalescent IgG)</div>
+          <div class="indent"><em>Histology</em> – pyogranulomatous inflammation and necrosis, tachyzoites or tissues cysts (bradyzoites)</div>
+          <div class="indent"><em>Fecal flotation</em> – not useful for diagnosis since window of shedding is short but is useful to determine if cat is shedding → fecal PCR may be useful</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> clindamycin (10-12 mg/kg PO BID x 4 weeks) or trimethoprim-sulfa (15 mg/kg PO BID x 4 weeks); azithromycin is another option (10 mg/kg PO SID x 4 weeks) → start with one antibiotic and if no significant clinical response within one week, try the other → adjunctive care includes supportive therapy and topical glucocorticoids with ocular involvement</div>
+        <div class="field"><span class="label">Prognosis:</span> drugs cannot eliminate infection so recurrence is possible especially with immunosuppression → prognosis poor if hepatic, CNS, pulmonary disease from tachyzoite replication and CNS signs may not completely resolve</div>
+        <div class="field"><span class="label">Prevention:</span> avoid feeding raw meat and prevent cats from roaming and hunting</div>
+        <div class="field"><span class="label">Zoonotic:</span> clean litter boxes every 24 hours, cook meat, wash vegetables, don't eat dirt, beware of sandboxes</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Babesia</span></div>
+        <div class="field"><span class="label">Agent:</span> intracellular parasite of RBCs, Babesia canis (large piroplasm) and Babesia gibsoni (small piroplasm) infect dogs and Babesia felis uncommonly infects cats in Africa</div>
+        <div class="field"><span class="label">Transmission:</span> tick bite from Rhipicephalus sanguineus in USA transmits Babesia canis and Babesia gibsoni in which they must feed for 1-3 days for sporozoites in tick saliva to be injected into dog to attach to RBCs and become engulfed by endocytosis rupturing the RBCs; direct transmission between dogs via dog fighting transmits Babesia gibsoni</div>
+        <div class="field"><span class="label">Predisposing factors:</span> 60% of Babesia canis cases are Greyhounds which poses a risk to other breeds via transfusions, 93% of Babesia gibsoni cases are Bully breeds which poses risk to other breeds via dog bites, splenectomy</div>
+        <div class="field"><span class="label">Pathophysiology:</span> parasite incorporated into RBCs → parasite antigens incorporated into RBC membrane induce antibodies that attach to RBC membrane (spherocytosis) → RBCs cleared by mononuclear phagocyte system in spleen → antibodies may attach to platelets and non-infected RBCs (anemia and thrombocytopenia) and parasitic infection causes lipid peroxidation of RBC membrane leading to sludging in capillary beds (esp. CNS and muscle)</div>
+        <div class="field"><span class="label">Clinical signs:</span> may dogs are subclinical but can develop lethargy, depression, fever, splenomegaly, pallor and icterus, hemoglobinuria, and even death</div>
+        <div class="field"><span class="label">Differentials:</span> hemolytic anemia → IMHA, zinc toxicity, pyruvate kinase and phosphofructokinase deficiencies</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Cytology</em> – difficult to find but can examine feathered edge of smear using capillary blood</div>
+          <div class="indent"><em>Serology</em> – recommend acute and convalescent as species can cross-react</div>
+          <div class="indent"><em>PCR</em> – very sensitive, may identify subclinical infections → false negatives (low burden)</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span>
+          <div class="indent">Babesia canis – imidocarb IM injection once and repeat in 14 days – good response rate and likely curative as it causes DNA damage, inhibits cell repair but side effects include salivation, lacrimation, urination, defecation from anticholinesterase activity</div>
+          <div class="indent">Babesia gibsoni – imidocarb does not cure → azithromycin + atovaquone for 10 days is preferred but can use clindamycin + doxycycline + metronidazole for 3 months → supportive care with blood transfusions, IV fluids and treatment for secondary IMHA if needed</div>
+        </div>
+        <div class="field"><span class="label">Prevention:</span> tick control, always screen blood donors and screen thrombocytopenic dogs prior to splenectomy</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Cytauxzoon felis</span></div>
+        <div class="field"><span class="label">Agent:</span> infects feline RBCs (piroplasms) and mononuclear cells</div>
+        <div class="field"><span class="label">Transmission:</span> tick bite from Amblyomma americanum</div>
+        <div class="field"><span class="label">Pathophysiology:</span> two stages
+          <div class="indent">Schizont-laden macrophages – schizonts transferred during tick feeding get taken up by macrophages → replicate in macrophages which become large and occlude blood vessels especially in lung, liver, spleen, lymph nodes leading to multi-organ failure and DIC → rupture and release merozoites</div>
+          <div class="indent">Merozoites (piroplasms) infect RBCs</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> CBC (anemia), chemistry (hyperbilirubinemia)
+          <div class="indent"><em>Cytology</em> – blood smear to ID piroplasms or schizont-laden macrophages</div>
+          <div class="indent"><em>PCR</em> – sensitive with few days of turn-around time so many cats die before then</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> atovaquone + azithromycin (60% survival) with supportive care of IV fluids, transfusion, heparin (to prevent DIC) → fatal if not treated early and aggressively</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Hepatozoon canis</span></div>
+        <div class="field"><span class="label">Agent:</span> infects mononuclear and bone marrow cells, spleen, and lymph nodes</div>
+        <div class="field"><span class="label">Transmission:</span> ingestion of Rhipicephalus sanguineus tick (Brown dog tick)</div>
+        <div class="field"><span class="label">Prevalence:</span> Southeast United States and worldwide</div>
+        <div class="field"><span class="label">Lifecycle:</span> dog ingests tick → sporozoites released in dogs GI tract → merozoites form meronts or macromeronts → macromeronts form in hemolymphatic organs and elongated micromerozoites form within "wheel spoke" meronts → micromerozoites invade neutrophils → tick ingests dog blood → gametogenesis and fertilization occur in tick → mature oocyst forms → dog ingests tick</div>
+        <div class="field"><span class="label">Clinical signs:</span> most dogs are subclinical or develop mild infection – immunocompromised can develop lifethreatening disease, anemia fever, anorexia, lethargy</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>CBC</em> – search for gamonts on blood smear</div>
+          <div class="indent"><em>PCR</em></div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> imidocarb every 14 days until gamonts are gone</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Hepatozoon americanum</span></div>
+        <div class="field"><span class="label">Agent:</span> infects mononuclear and muscle cells</div>
+        <div class="field"><span class="label">Transmission:</span> ingestion of Amblyomma maculatum tick (Gulf Coast tick) or dog infests paratenic host</div>
+        <div class="field"><span class="label">Prevalence:</span> Southeast and South Central US</div>
+        <div class="field"><span class="label">Lifecycle:</span> dog ingests tick or paratenic host eaten by dog → sporozoites enter host cells and migrate to skeletal muscle → mature meront ruptures in skeletal muscle → pyogranuloma forms and gamonts circulate in dog blood → tick ingests gamonts in dog blood → gametogenesis and fertilization occur in tick → mature oocyst forms which is ingested by dog or paratenic host</div>
+        <div class="field"><span class="label">Clinical signs:</span> fever, pain, reluctance to move, muscle atrophy, altered gait, mucopurulent ocular discharge</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>CBC</em> – severe leukocytosis up to 200,000</div>
+          <div class="indent"><em>PCR</em></div>
+          <div class="indent"><em>Muscle biopsy</em></div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> trimethoprim-sulfa + clindamycin + pyrimethamine or ponazuril → both regimens followed by longterm decoquinate to prevent relapse</div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Leishmania – Canine visceral leishmania (CVL)</span></div>
+        <div class="field"><span class="label">Agent:</span> infects mononuclear cells</div>
+        <div class="field"><span class="label">Transmission:</span> bite from a Sandfly</div>
+        <div class="field"><span class="label">Prevalence:</span> foxhounds</div>
+        <div class="field"><span class="label">Pathophysiology:</span> dogs have cutaneous and visceral involvement</div>
+        <div class="field"><span class="label">Clinical signs:</span> dogs can be asymptomatic carriers or develop overt disease, immunosuppression, and immune complex disease → skin lesions, cachexia</div>
+        <div class="field"><span class="label">Diagnosis:</span> PCR</div>
+        <div class="field"><span class="label">Zoonotic</span></div>
+
+        <hr class="section-divider">
+        <div class="sub-section"><span class="sub-header">Trypanosoma cruzi (Chagas' disease)</span></div>
+        <div class="field"><span class="label">Agent:</span> infects cardiac muscle</div>
+        <div class="field"><span class="label">Transmission:</span> ingestion of feces of kissing bugs or ingesting the bugs</div>
+        <div class="field"><span class="label">Prevalence:</span> infects dogs, cats, and humans in South and Central America and southern United States</div>
+        <div class="field"><span class="label">Clinical signs:</span> causes cardiac and neuro signs → treatment doesn't stop DCM</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent"><em>Cytology</em></div>
+          <div class="indent"><em>Serology</em></div>
+          <div class="indent"><em>PCR</em></div>
+        </div>
+        </div>
+      </div>
+
+      <div id="imha" class="disease-content">
+        <div class="notes-body">
+        <h2>Immune-Mediated Hemolytic Anemia</h2>
+        <p>disease in which autoantibodies are directed at antigens on the erythrocyte membrane, promoting their accelerated destruction– immune system misidentifies RBCs as foreign</p>
+        <div class="field"><span class="label">Pathophysiology:</span> type II hypersensitivity reaction (antibody-mediated immune reaction in which antibodies are directed against cellular or extracellular matrix antigens, resulting in cellular destruction, functional loss, or tissue damage)
+          <div class="indent">Extravascular hemolysis – antibody or antibody and compliment coated RBCs phagocytized by macrophages in spleen → IgG more common, spherocytosis, hyperbilirubinemia, hyperbilirubinuria</div>
+          <div class="indent">Intravascular hemolysis – complement mediated lysis (membrane attack complex) → IgM more common, ghost cells, hemoglobinemia, hemoglobinuria, hyperbilirubinemia, hyperbilirubinuria</div>
+        </div>
+        <div class="field"><span class="label">Clinical signs:</span> non-specific (anorexia, lethargy, weakness), fever (immune-mediated inflammation), tachypnea/tachycardia (anemia, hypoxemia), pallor (anemia), icterus (RBC destruction and hemoglobin), splenomegaly, hepatomegaly, discolored urine/stool</div>
+        <div class="field"><span class="label">Suspicion of IMHA:</span> physical exam findings, signalment (dogs and cats), breed predisposition (many such as Cocker Spaniels, "little white fluffies", Poodles), any age (median 6 years in dogs), females over-represented, any age, any breed, any sex</div>
+        <div class="field"><span class="label">Diagnosis:</span>
+          <div class="indent">Anemia - +/- regenerative (about 30% lack regeneration, or are pre-regenerative)</div>
+          <div class="indent">Hemolysis – at least one – hyperbilirubinemia, hemoglobinuria (intravascular hemolysis), hemoglobinuria (intravascular hemolysis), ghost cells (intravascular hemolysis)</div>
+          <div class="indent">Immune-mediated RBC destruction – at least two – agglutination (1:4 saline dilution), spherocytes (dogs), anti-RBC antibodies (DAT, flow cytometry, etc.) – or saline washed (3 times) RBC autoagglutination</div>
+          <div class="indent">Direct Coomb's test (DAT, direct antiglobulin test) if agglutination and spherocytosis are NOT both present</div>
+        </div>
+        <div class="field"><span class="label">Classification:</span>
+          <div class="indent">Non-associative – primary or idiopathic</div>
+          <div class="indent">Associative – secondary → infections (Babesia gibsoni in dogs, Babesia felis in cats, Mycoplasma hemofelis in cats, FeLV in cats?), cancer?, drugs? (cefazedone in dogs, propylthiouracil in cats), vaccines?</div>
+        </div>
+        <div class="field"><span class="label">Rational work-up:</span> CBC with slide review for spherocytosis (evaluation of severity of anemia, presence of regeneration), slide agglutination, Direct Coomb's if needed, chemistry (degree of hyperbilirubinemia, other comorbidities), infectious disease testing (PCR for Babesia and Mycoplasma haemofelis), imaging (often low yield but used for neoplasia detection, blood type and crossmatch</div>
+        <div class="field"><span class="label">Treatment:</span>
+          <div class="indent">Specific – immunosuppression to stop RBC immune destruction</div>
+          <div class="indent">Steroid – prednisone or prednisolone (cats) 2 mg/kg/day or if &gt;25 kg 30-40 mg/m2/day, dexamethasone IV in hospital → when hematocrit &gt;30% for 2 weeks and absence of agglutination, spherocytosis, resolution of hyperbilirubinemia, reduce steroid dose by 25% and continue gradual wean about 25% every 3 weeks with total treatment time often being 3-6 months</div>
+          <div class="indent">Steroid side effects include PU/PD, panting, muscle wasting, joint/tendon laxity (cruciate tear risk?), GI upset (gastric ulceration at high doses), behavior changes (depression, lethargy, aggression), insulin resistance (especially cats), heart failure (cats with underlying heart disease</div>
+          <div class="indent">Secondary agents – use in severe, life-threatening disease, lack of control of IMHA in 7 days with glucocorticoids alone, drop in PCV &gt;5% in 24 hours, or reduce adverse effects of glucocorticoids → azathioprine 2 mg/kg/day reduced to q48hr after 2 weeks, cyclosporine 5 mg/kg BID, mycophenolate 8-12 mg/kg BID ***never use more than 2 immunosuppressives at once!***</div>
+          <div class="indent">Supportive – minimize tissue hypoxia by giving RBC transfusion (agglutination = crossmatching challenging) – give RBC transfusion when clinical for anemia (tachycardia, tachypnea, weakness)</div>
+          <div class="indent">Symptomatic – prevent thrombosis (risk of thrombosis is increased with IMHA) and minimize steroid side effects</div>
+          <div class="indent">Antithrombotics – thromboprophylaxis is indicated for all IMHA dogs unless platelets &lt;30K (actively bleeding) as thrombosis in IMHA can occur from endothelial activation, intravascular tissue factor expression, procoagulant microparticle generation, platelet activation, or imbalance or pro- and anticoagulant factors → continue until remission and discontinuation of glucocorticoids</div>
+          <div class="indent">Anticoagulants first 2 weeks (low molecular weight heparin (eg. enoxaparin), factor Xa inhibitor (eg. rivaroxaban)) and antiplatelets (clopidogrel 1.1-4 mg/kg/day)</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> major cause of death in first month is thrombosis – 74% survival to discharge, 68% survival to 30 days – factors associated with decreased survival include ASA &gt; 3, tbili &gt; 5, azotemia</div>
+        </div>
+      </div>
+
+      <div id="itp" class="disease-content">
+        <div class="notes-body">
+        <h2>Immune-Mediated Thrombocytopenia (ITP)</h2>
+        <div class="field"><span class="label">Clinical signs associated with bleeding disorders:</span>
+          <div class="indent">Primary hemostatic defect (platelets) – bleeding from mucosal surfaces (epistaxis, melena, hematochezia, bleeding from gums, hematuria), bleeding from small vessels (petechiae/ecchymoses)</div>
+          <div class="indent">Secondary hemostatic defect (coagulation factors) – bleeding from large vessels (hemarthrosis, hemothorax, hemoperitoneum, hemoretroperitoneum, hematomas</div>
+        </div>
+        <div class="field"><span class="label">Causes for thrombocytopenia:</span> consumption (bleeding, neoplasia, DIC), decreased production (bone marrow disease), destruction (immune-mediated, infection), loss (rodenticide, neoplasia), sequestration (splenomegaly, neoplasia)</div>
+        <div class="field"><span class="label">Pathophysiology:</span> not well elucidated – T helper cells promote anti-platelet antibody generation → antibodies coat platelets, leading to clearance by reticuloendothelial system → macrophages then present antigen, continuing cycle → cytotoxic T cells can destroy platelets in blood or spleen → megakaryocytes in bone marrow can also be targeted
+          <div class="indent">Degree of thrombocytopenia is key – &lt;50,000 platelets/ul but often primary ITP is &lt;20,000 platelets/ul (&lt;10,000 platelets/ul is common)</div>
+        </div>
+        <div class="field"><span class="label">Chief complaints for ITP:</span> lethargy &gt; decreased appetite/anorexia &gt; melena &gt; hematochezia, hematuria &gt; epistaxis &gt; hematemesis &gt; hemoptysis, bruising, weakness &gt; vomiting &gt; increased respiratory effort &gt; scleral hemorrhage, lameness, diarrhea &gt; asymptomatic</div>
+        <div class="field"><span class="label">Characterization of ITP:</span>
+          <div class="indent">Primary ITP (autoimmune, idiopathic, non-associative) – most common as any dog can get ITP, but increased incidence in middle-aged female dogs, Cocker Spaniels, Old English Sheepdogs, German Shepherd Dogs, and Poodles</div>
+          <div class="indent">Secondary TIP (associative) – infections (Anaplasma, Rocky Mountain Spotted Fever, Babesia), drugs (cephalosporins, sulfonamides), neoplasia, vaccination?</div>
+          <div class="indent">Antiplatelet antibodies and infectious disease – Anaplasma phagocytophilum, Ehrlichia canis, Babesia gibsoni, Leishmania infantum</div>
+        </div>
+        <div class="field"><span class="label">Diagnosis:</span> exclude other causes of thrombocytopenia as no test accurately demonstrates immune destruction but severity of thrombocytopenia (&lt;50,000, often less than 10,000) is indicative
+          <div class="indent">Antiplatelet antibody positive test result does not mean primary ITP and false negatives are possible if therapy has already been started</div>
+          <div class="indent">Evaluate for secondary causes of ITP – through history (drugs, vx, infectious disease exposure), look for neoplasia with chest and abdominal imaging (AUS, CXR vs. CT scan), infectious disease testing (4DxPlus, extended vector born disease panel depending on geography)</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span>
+          <div class="indent">Eliminate underlying risk factors – treat infections/cancer, avoid immunogenic drugs, avoid vaccination?</div>
+          <div class="indent">Minimize bleeding – gentle handling, no jugular venipuncture, romiplostim? (thrombopoietin receptor agonist)</div>
+          <div class="indent">Immunosuppression – no change in dose until resolution of thrombocytopenia and stable for 2-4 weeks then slow dose reduction (25% every 2-4 weeks) and monitor platelet counts prior to reductions to monitor for relapse</div>
+          <div class="indent">Prednisone (prednisolone for cats) is mainstay of therapy – dogs 1-2 mg/kg/day or if &gt;30 kg use 30-40 mg/m2/day, cats 2-4 mg/kg/day → often start a second immunosuppressive agent to allow for earlier or faster reductions in steroids</div>
+          <div class="indent">Second line agents – can be used as sole agents if steroid or contraindicated but may take longer to work → mycophenolate mofetil (16-24 mg/kg/day) or azathioprine (2 mg/kg/day x 1-2 weeks, then EOD) or cyclosporine modified (10 mg/kg/day)</div>
+          <div class="indent">Acute adjunctive therapy – vincristine, human intravenous immunoglobulin (more rapid increase in platelet count and decreased hospitalization time vs. prednisone alone)</div>
+        </div>
+        <div class="field"><span class="label">Prognosis:</span> most dogs will have increased platelet counts (&gt;50,000 to 100,000) in 7-10 days with 89% surviving to discharge and 86% going into remission but recurrence rate is 26-47% → negative prognostic indicators include elevated BUN an melena</div>
+        </div>
+      </div>
+
+      <div id="impa" class="disease-content">
+        <div class="notes-body">
+        <h2>Immune-Mediated Polyarthritis (IMPA)</h2>
+        <p>Immune-mediated non-erosive polyarthropathies: 2/3 of IMPA are primary, the other 1/3 have a trigger or underlying disorder</p>
+        <div class="sub-section"><span class="sub-header">Types</span></div>
+        <div class="field">Type I – idiopathic (65%)
+          <div class="indent">Prevalence: middle aged large breed dogs</div>
+          <div class="indent">Physical exam: lameness or gait abnormalities (multiple limbs, single limb, shifting leg), fever, joint pain and/or swelling → can NOT diagnose idiopathic IMPA based on examination alone</div>
+        </div>
+        <div class="field">Type II – associated with infection (UTI, endocarditis, other) (10%) → sterile joint fluid with positive culture elsewhere in body</div>
+        <div class="field">Type III – hepatic or GI associated (4%)</div>
+        <div class="field">Type IV – distant neoplasia (2%)</div>
+        <div class="field"><span class="label">Misc categories</span> – tick born disease-exposure vs. infection (50% +), SLE (8%), vaccine/drug induced (Akitas) (4%), early erosive (2%) → suspect if patient has IMPA and history of drug exposure &lt; 30 days</div>
+        <div class="field"><span class="label">Diagnostic workup for IMPA:</span>
+          <div class="indent"><em>CBC</em> – non-specific leukocytosis, mild anemia, identify cytopenias for SLE/tickborne disease, evaluate for organisms</div>
+          <div class="indent"><em>Chemistry</em> – mild non-specific (increased liver enzymes), identify organs for further evaluation</div>
+          <div class="indent"><em>Urinalysis</em> – identify proteinuria (Lyme disease, SLE), identify other organs for further evaluation</div>
+          <div class="indent"><em>4Dx</em> – tickborne disease</div>
+          <div class="indent"><em>Radiographs</em> – rule out erosive lesions</div>
+          <div class="indent"><em>Histopathology</em> – muscle for when polyarthritis and polymyositis are seen together</div>
+          <div class="indent"><em>Arthrocentesis</em> – sedate and prep aseptically → landmarks may be more challenging to isolate due to effusion → sample at least 3 joints with carpal and stifle joints being easiest to tap but tarsal joints have higher diagnostic yield → direct smear, cell counts, and bacterial cultures on synovial fluids</div>
+          <div class="indent"><em>Synovial fluid analysis</em> – increased fluids, decreased viscosity, fluid discoloration, nucleated cell count moderately to markedly increased (3,000-100,000/uL) with predominate cell type being NON-DEGENERATE NEUTROPHILS</div>
+        </div>
+        <div class="field"><span class="label">Treatment for primary IMPA:</span>
+          <div class="indent">Immunosuppressants – prednisone (1-2 mg/kg/dog or if &gt;30 kg then 30 mg/m2/day) or prednisolone (2-4 mg/kg/day) is mainstay of therapy but can use azathioprine, cyclosporine, leflunomide, or mycophenolate → repeat arthrocentesis and joint cytology every 2-3 weeks to guide therapy and add ancillary therapy in refractory patients at 2 weeks or relapsed patients or large breed dogs to avoid pred side effects</div>
+        </div>
+        <div class="field"><span class="label">Prognosis for primary IMPA</span> – &gt;55% can be tapered of immunosuppressants, 20% managed with long term meds, 15% refractory to treatment and some recurrence can develop but is uncommon</div>
+        <div class="field"><span class="label">Treatment for secondary IMPA:</span>
+          <div class="indent">Immunosuppressants? – not needed in many cases</div>
+          <div class="indent">Rickettsial – rapid improvement with doxycycline treatment of Anaplasma and Lyme with short term NSAIDs</div>
+          <div class="indent">Drug or vaccine induced – resolve after cessation of drug or with time but immunosuppressants may be needed</div>
+          <div class="indent">Distant neoplasia – identification and elimination if possible – lymphoma, osteosarcoma, hemangiosarcoma</div>
+        </div>
+        <div class="field"><span class="label">Prognosis for secondary IMPA</span> – dependent on underlying disease process but neoplastic process is poor prognosis</div>
+
+        <hr class="section-divider">
+        <h3>Immune-mediated erosive polyarthropathies</h3>
+        <p>chronic, progressive inflammatory joint disease characterized by erosive and destructive changes within joints (AKA rheumatoid arthritis and feline chronic progressive polyarthritis)</p>
+        <div class="field"><span class="label">Etiology</span> – cellular and types II, III, IV hypersensitivity reactions present – synovitis likely from immune complex reactions (antigen-antibody) which include the rheumatoid factor (RF) to activate compliment cascade, stimulate prostaglandin release, and cause inflammation</div>
+        <div class="field"><span class="label">Prevalence</span> – small breed and medium breed dogs, middle aged (4-7 years), Greyhounds and Shelties are predisposed</div>
+        <div class="field"><span class="label">Clinical signs</span> – carpal, tarsal, interphalangeal joints most often affected – joint pain, effusion, soft tissue swelling, decreased ROM, systemic illness (fever, lymphadenopathy, anorexia)</div>
+        <div class="field"><span class="label">Diagnostic work up</span> – similar to primary IMPA
+          <div class="indent"><em>Synovial fluid analysis</em> – nucleated cell count moderately to markedly increased (3,000-100,000/uL) with predominate cell type being more lymphocytes, culture negative, increased volume, discoloration, decreased viscosity</div>
+          <div class="indent"><em>Rheumatoid factor serology</em> – positive in 25-70% but can be positive in normal dogs</div>
+          <div class="indent"><em>Radiographs</em> – joint capsule distention, periarticular swelling, bony erosions and loss of trabecular bone at epiphyses</div>
+          <div class="indent"><em>Histology</em> – mononuclear cell inflammation of synovial tissue with villus hypertrophy and fibrin deposition – granulation tissue can extend from synovium to articular surface</div>
+        </div>
+        <div class="field">Diagnosis typically based on radiographic and joint fluid findings and clinical signs!</div>
+        <div class="field"><span class="label">Treatment</span> – no specific therapy, pain management critical, steroids but can become refractory, combination immunosuppressive therapy may slow progression</div>
+        <div class="field"><span class="label">Prognosis</span> – poor as most animals are euthanized due to chronic pain from degenerative joint disease</div>
+        </div>
+      </div>
+
+      <div id="sle" class="disease-content">
+        <div class="notes-body">
+        <h2>Systemic Lupus Erythematosus (SLE)</h2>
+        <p>multi-system immune disease</p>
+        <div class="field"><span class="label">Etiology:</span> unknown – primary immune disease or secondary disease due to underlying cause</div>
+        <div class="field"><span class="label">Prevalence:</span> rare in dogs and very rare in cats, middle aged to older, any breed but German Shepherd Dogs, Shelties, Collies,, and Poodles are overrepresented</div>
+        <div class="field"><span class="label">Manifestations:</span> polyarthropathy, skin lesions (often mucocutaneous junction), renal lesions (proteinuria, glomerulonephropathy), blood dyscrasia</div>
+        <div class="field"><span class="label">Diagnosis:</span> definitive diagnosis = positive ANA with at least 2 body systems affected and immunopath abnormalities in those tissues
+          <div class="indent">Anti-nuclear antibody (serum ANA) – false positive and false negatives can occur</div>
+          <div class="indent">Immune disease – IMPA, IMHA, ITP, glomerular nephritis, polymyositis, immune mediated skin disease, immune mediated CNS disease</div>
+        </div>
+        <div class="field"><span class="label">Treatment:</span> immunosuppressive therapy – prednisone, azathioprine and others include cyclosporine, mycophenolate, cyclophosphamide</div>
+        <div class="field"><span class="label">Prognosis:</span> guarded, relapses can occur and long term therapy is needed in most</div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="transfusion-section" class="tab-content">
+      <h2>Transfusion Medicine</h2>
+      <div id="transfusion" class="disease-content active">
+        <div class="notes-body">
+        <h2>Transfusion Medicine</h2>
+        <div class="field"><span class="label">Goals of transfusion medicine:</span>
+          <div class="indent">1. Provide an increase in oxygen carrying capacity via red blood cell mass</div>
+          <div class="indent">2. Replenish deficient coagulation factors and hemostatic proteins</div>
+        </div>
+        <div class="field"><span class="label">When to transfuse:</span> increases in oxygen extraction from blood required to compensate for tissue oxygen demands occurs once PCV &lt;15%
+          <div class="indent">Clinical signs! – weakness, collapse, tachycardia, tachypnea (acutely anemic animals will have clinical signs at a higher PCV)</div>
+        </div>
+        <div class="field"><span class="label">Compensatory mechanisms:</span>
+          <div class="indent">1. Sympathetic nervous system – diversion of blood away from skeletal, skin, splanchnic circulation and increase in heart rate and blood pressure</div>
+          <div class="indent">2. Increase in oxygen unloading at tissue level – decreased affinity of hemoglobin for oxygen</div>
+          <div class="indent">3. Increased renal erythropoietin production</div>
+        </div>
+        <div class="field"><span class="label">Indications for plasma transfusion:</span>
+          <div class="indent">1. Fresh frozen plasma – coagulation factor deficiencies in the presence of active bleeding, DIC, hepatic failure, all hereditary coagulopathies, or massive hemorrhage</div>
+          <div class="indent">2. Frozen plasma – no labile clotting factors (F5, F8, vWF), rodenticide toxicity (vitamin K dependent factors), hemophilia B, or oncotic support?</div>
+          <div class="indent">3. Cryoprecipitate – portion of plasma that precipitates after fresh frozen plasma has been slowly thawed and is heavily concentrated with von Willebrand's factor and factor VIII, fibrinogen/fibronectin</div>
+          <div class="indent">4. Cryo-poor plasma – indicated for hemophilia B (F9), vitamin K deficiency, F11 deficiency, or F7 deficiency</div>
+        </div>
+        <div class="field"><span class="label">Indications for platelet transfusion:</span> uncontrolled or life-threatening bleeding due to thrombocytopenia, thrombocytopathia or massive transfusion
+          <div class="indent">1. Fresh whole blood (&lt;8 hours old) – massive hemorrhage, profound anemia with active bleeding, minimal platelet loss</div>
+          <div class="indent">2. Platelet rich plasma – prepared from soft spin of fresh whole blood but reduced platelet recovery and survival</div>
+          <div class="indent">3. Apheresis platelets, cryopreserved platelets in 6% DMSO</div>
+          <div class="indent">4. Lyophilized platelets – long shelf life and retains vWF adhesion function but short lifespan (minutes)</div>
+        </div>
+        <div class="field"><span class="label">How much product:</span>
+          <div class="indent">1. Whole blood – 90 ml (dog) or 60 ml (cat) x kg x (PCVdesired – PCVpatient) / PCVdonor (assume donor PCV 60%)</div>
+          <div class="indent">2. PRBCs – 1.5 ml x kg x %PCV rise</div>
+          <div class="indent">3. FFP – 10-20 ml/kg or 15-30 ml/kg for vWB, hemophilia A</div>
+          <div class="indent">4. Platelets – 10 ml/kg fresh whole blood increases platelets by 10,000/uL or 1 unit platelet rich plasma/10 kg increases platelets by 40,000/uL</div>
+          <div class="indent">5. Cryoprecipitate – 1 unit / 10 kg</div>
+        </div>
+        <div class="field"><span class="label">Pre-transfusion testing:</span> blood type (canine DEA 1.1 antigen + or – and feline A, B, AB or Dal and Mik antigens), crossmatch (ALL cats and dogs who have received prior transfusion), and infectious disease testing for donors
+          <div class="indent">Blood typing – tube agglutination (laboratory) or card agglutination (in-house) to test for DEA 1.1 and A, B, or AB</div>
+          <div class="indent">Canine blood types – dog erythrocyte antigens (DEA) 1, 3, 4, 5, 6, 7, and 8 and Dal antigen → cell membrane on RBC has receptors that recognize the 8 blood groups → DEA 1.1 is most clinically significant and highly antigenic → dogs can tolerate one transfusion of non-type matched blood but universal donor is negative for DEA 1, 5, 7 and positive for DEA 4</div>
+          <div class="indent">Feline blood types – type A cats have low levels of anti-B antibodies, type B cats have high levels of antiA antibodies and type AB cats lack antibodies against type A or type B → cats also have Mik antigen so all cats need to be crossmatched → cats have naturally occurring alloantibodies so there is no universal feline donor</div>
+          <div class="indent">Crossmatch – detects incompatibilities not detected with blood typing – major crossmatch = donor RBCs with recipient plasma to detects recipient antibodies against donor RBCs – minor crossmatch = donor plasma with recipient RBCs</div>
+        </div>
+        <div class="field"><span class="label">Transfusion administration:</span>
+          <div class="indent">Rate – 0.5-1 ml/kg/hr for first 15 minutes and after 15 minutes increase to 5-10 ml/kg/hr → deliver transfusion within 4 hours if tolerated</div>
+          <div class="indent">Method – dedicated line with standard blood filter set (170 microns), canine pRBCs should be administered through an in-line filter, use syringe pump with HemoNate (18 micron) filter for cats and small dogs &lt;10 kg</div>
+          <div class="indent">Monitor – heart rate, respiratory rate, and temperature every 15 minutes for a half hour, then every 30 minutes for 1 hours, then hourly during the remainder of the transfusion → monitor for signs of nausea, increased respiratory effort, changes in mentation, hematuria, and restlessness</div>
+        </div>
+        <div class="field"><span class="label">Transfusion reactions:</span> frequency of transfusion reactions of all types are generally low (3.3-15%) but febrile hemolytic reactions and anaphylaxis are most life threatening
+          <div class="sub-section"><span class="sub-header">Acute immunologic</span></div>
+          <div class="indent">Febrile non-hemolytic – pro-inflammatory cytokines from storage or infused antigen
+            <div class="indent2">Slow transfusion (diphenhydramine is ineffective as the reaction is secondary to inflammatory cytokines, not histamine</div>
+          </div>
+          <div class="indent">Febrile hemolytic – IgG mediated (dogs) or IgM (cats) mediated destruction of RBCs with most severe leading to hemoglobinemia, AKI, hypotension, shock, or DIC
+            <div class="indent2">STOP transfusion, renal support with IV fluids, FFP if DIC, supportive care of shock and hypotension (diphenhydramine ineffective as reaction is not mediated by histamine release)</div>
+          </div>
+          <div class="indent">Anaphylaxis – IgE mediated to plasma proteins and can be mild (urticaria, facial swelling) to severe (hypotension, shock)
+            <div class="indent2">Anaphylaxis = STOP transfusion, administer IV fluids and pressors (epinephrine) for acute phase and diphenhydramine and steroids for late phase</div>
+          </div>
+          <div class="indent">Allergic hypersensitivity reaction = stop transfusion for 30 minutes, treat (diphenhydramine) and restart at slower rate</div>
+          <div class="indent">Transfusion related acute lung injury (TRALI) – activated neutrophils damage pulmonary endothelium bilaterally within 6 hours with no evidence of CHF but resolves in 24-96 hours</div>
+          <div class="sub-section"><span class="sub-header">Acute non-immunologic</span></div>
+          <div class="indent">Transfusion associated circulatory overload (TACO) – due to underlying cardiac disease or chronic anemia</div>
+          <div class="indent">Sepsis – results in marked fever, hypotension, tachycardia</div>
+          <div class="indent">Electrolyte derangements – hyperkalemia, hypoglycemia, hypophosphatemia, hypocalcemia</div>
+          <div class="sub-section"><span class="sub-header">Delayed immunologic</span></div>
+          <div class="indent">Delayed hemolytic – decreased RBC survival due to previous antibody exposure (canine DEA 3, 5, 7)</div>
+          <div class="indent">Transfusion related immune modulation (TRIM) – down regulation of cellular immune response</div>
+          <div class="sub-section"><span class="sub-header">Delayed non-immunologic</span></div>
+          <div class="indent">Infectious disease transmission – eg. Mycoplasma, Babesia</div>
+        </div>
+        <div class="field"><span class="label">Alternatives to blood products:</span>
+          <div class="indent">Autotransfusion – compatible and less immunosuppression but will not correct hypocoagulation</div>
+          <div class="indent">Synthetic colloids – cheap and readily available for acute blood pressure and oncotic support but prolonged use at higher dosages can cause platelet dysfunction and renal impairment</div>
+          <div class="indent">Antifibrinolytics – aminocaproic acid, tranexamic acid ideally within 6 hours of trauma for benefit – given to Greyhounds and those having undergone trauma or massive hemorrhage</div>
+        </div>
+
+        <hr class="section-divider">
+        <table>
+          <thead>
+            <tr><th>Product</th><th>Volume</th><th>Frequency</th><th>Indications</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Fresh whole blood</td><td>~90 ml/kg dog, ~60 ml/kg cat formula based on PCV rise</td><td>&lt;8 hours old</td><td>Massive hemorrhage, profound anemia with active bleeding, minimal platelet loss</td></tr>
+            <tr><td>Packed red cells</td><td>1.5 ml/kg x %PCV rise</td><td>As needed</td><td>Increase oxygen carrying capacity / RBC mass</td></tr>
+            <tr><td>Platelet rich plasma</td><td>1 unit/10 kg increases platelets by 40,000/uL</td><td>As needed</td><td>Uncontrolled or life-threatening bleeding due to thrombocytopenia/thrombocytopathia</td></tr>
+            <tr><td>Fresh and fresh frozen plasma</td><td>10-20 ml/kg (15-30 ml/kg for vWD, hemophilia A)</td><td>As needed</td><td>Coagulation factor deficiencies, active bleeding, DIC, hepatic failure, hereditary coagulopathies, massive hemorrhage</td></tr>
+            <tr><td>Frozen plasma</td><td>10-20 ml/kg</td><td>As needed</td><td>No labile clotting factors needed (F5, F8, vWF), rodenticide toxicity, hemophilia B, oncotic support</td></tr>
+            <tr><td>Plasma cryoprecipitate</td><td>1 unit/10 kg</td><td>As needed</td><td>Concentrated vWF, factor VIII, fibrinogen/fibronectin</td></tr>
+            <tr><td>Cryosupernatant (cryo-poor plasma)</td><td>10-20 ml/kg</td><td>As needed</td><td>Hemophilia B (F9), vitamin K deficiency, F11 deficiency, F7 deficiency</td></tr>
+          </tbody>
+        </table>
+        </div>
       </div>
     </section>
   </main>
